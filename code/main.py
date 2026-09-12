@@ -3,6 +3,7 @@ import pandas as pd
 from pathlib import Path
 from dotenv import load_dotenv
 from tqdm import tqdm
+import json, re
 
 import numpy as np
 from datetime import timedelta
@@ -47,12 +48,44 @@ def load_all_data():
     return data
 
 # --- 2. MULTIMODAL LAYER (VISION) ---
-def extract_amount_from_image(image_id):
-    """Uses Gemini Vision to extract missing amounts from receipts."""
-    # TODO: Implement image reading and Gemini API call
-    # For now, return None so the script runs without crashing
-    return None
+CACHE_PATH = BASE_DIR / 'code' / 'image_cache.json'
+USAGE = {"model": "gemini-2.0-flash", "calls": 0, "input_tokens": 0, "output_tokens": 0}
 
+def extract_amount_from_image(image_id):
+    """Uses Gemini Vision to extract missing amounts from receipts (cached)."""
+    if not image_id or client is None:
+        return None, None
+    cache = json.loads(CACHE_PATH.read_text()) if CACHE_PATH.exists() else {}
+    if image_id in cache:
+        return cache[image_id]['amount'], cache[image_id]['currency']
+    path = DATASET_DIR / 'media' / 'images' / f'{image_id}.png'
+    if not path.exists():
+        return None, None
+    from google.genai import types
+    resp = client.models.generate_content(
+        model=USAGE["model"],
+        contents=[types.Part.from_bytes(data=path.read_bytes(), mime_type='image/png'),
+                  'Extract the primary transaction amount and 3-letter currency code from this '
+                  'document. Reply JSON only: {"currency": "XXX", "amount": 0.00}'],
+        config=types.GenerateContentConfig(temperature=0.0))
+    USAGE["calls"] += 1
+    USAGE["input_tokens"] += getattr(resp.usage_metadata, "prompt_token_count", 0) or 0
+    USAGE["output_tokens"] += getattr(resp.usage_metadata, "candidates_token_count", 0) or 0
+    amt = cur = None
+    m = re.search(r'\{.*\}', resp.text or '', re.S)
+    if m:
+        try:
+            obj = json.loads(m.group(0))
+            amt, cur = float(obj.get("amount")), obj.get("currency")
+        except Exception:
+            pass
+    if amt is None:
+        m2 = re.search(r'([A-Z]{3})\s*([\d][\d,]*(?:\.\d+)?)', resp.text or '')
+        if m2:
+            cur, amt = m2.group(1), float(m2.group(2).replace(',', ''))
+    cache[image_id] = {"amount": amt, "currency": cur}
+    CACHE_PATH.write_text(json.dumps(cache, indent=2))
+    return amt, cur
 # --- HELPER: CURRENCY CONVERSION ---
 def convert_currency(amount, from_curr, to_curr, date, rates_df):
     """Converts amount to home currency using the closest past exchange rate."""
@@ -84,142 +117,190 @@ def convert_currency(amount, from_curr, to_curr, date, rates_df):
         rate = valid_rates.iloc[0]['rate']
         return amount * rate
 
-# --- 3. LEDGER BUILDER LAYER ---
-def build_user_ledger(user_id, request_date, data):
-    """Filters events and projects recurring bills for the 90-day forecast."""
+# --- 3. LEDGER BUILDER LAYER (v2) ---
+def build_user_ledger(user_id, request_date, data, horizon=90):
+    """Filters events and projects ALL recurring occurrences inside the 90-day window."""
     profile = data['profiles'][data['profiles']['user_id'] == user_id].iloc[0]
     home_curr = profile['home_currency']
     rates = data['exchange_rates']
-    
-    user_events = data['events'][data['events']['user_id'] == user_id].copy()
-    
-    # 1. Filter out failed, cancelled, and unrealized events
-    user_events = user_events[~user_events['status'].isin(['failed', 'cancelled', 'unrealized'])]
-    
-    # 2. Convert all amounts to home currency
-    user_events['amount_home'] = user_events.apply(
-        lambda row: convert_currency(row['amount'], row['currency'], home_curr, row['settlement_date'], rates), 
-        axis=1
-    )
-    
-    # 3. Separate into Future One-Offs and Past History (for recurrence detection)
-    future_events = user_events[user_events['settlement_date'] >= request_date].copy()
-    
-    # Rule: Do not count pending credits
+    end = request_date + timedelta(days=horizon)
+
+    ev = data['events'][data['events']['user_id'] == user_id].copy()
+    ev = ev[~ev['status'].isin(['failed', 'cancelled', 'unrealized'])]
+    blank = ev['amount'].isna()
+    if blank.any():
+        img_map = dict(zip(data['images']['related_event_id'], data['images']['image_id']))
+        for idx in ev.index[blank]:
+            amt, cur = extract_amount_from_image(img_map.get(ev.at[idx, 'event_id']))
+            if amt is not None:
+                ev.at[idx, 'amount'] = amt
+                if pd.isna(ev.at[idx, 'currency']) and cur:
+                    ev.at[idx, 'currency'] = cur
+    ev['amount_home'] = ev.apply(
+        lambda r: convert_currency(r['amount'], r['currency'], home_curr, r['settlement_date'], rates), axis=1)
+
+    # Future one-offs. Rule: reserve pending debits, ignore pending credits.
+    future_events = ev[ev['settlement_date'] >= request_date].copy()
     future_events = future_events[~((future_events['direction'] == 'credit') & (future_events['status'] == 'pending'))]
-    
-    # 4. Detect Recurring Expenses (The Hackathon Trick)
-    # If an event happened in the 90 days prior, assume it happens again in the next 90 days.
-    past_events = user_events[
-        (user_events['settlement_date'] < request_date) & 
-        (user_events['settlement_date'] >= request_date - timedelta(days=90)) &
-        (user_events['status'] == 'settled') &
-        (user_events['direction'] == 'debit')
-    ]
-    
-    recurring_projections = []
-    for desc, group in past_events.groupby('description'):
-        if len(group) >= 1: # It happened recently, project it forward
-            last_date = group['settlement_date'].max()
-            avg_amount = group['amount_home'].mean()
-            
-            # Project to next occurrence (simple 30-day cycle for monthly bills)
-            next_date = last_date + timedelta(days=30)
-            while next_date < request_date:
-                next_date += timedelta(days=30)
-                
-            if next_date < request_date + timedelta(days=90):
-                recurring_projections.append({
-                    'date': next_date, 
-                    'amount': avg_amount, 
-                    'direction': 'debit'
-                })
-                
-    return future_events, recurring_projections
 
-# --- 4. THE 90-DAY FORECAST ENGINE (THE MATH) ---
-def calculate_90_day_forecast(profile, ledger_data, request_date):
-    """Simulates 90 days to find the maximum safe payment today."""
-    start_bal = profile['current_available_balance']
-    min_bal = profile['minimum_balance_to_keep']
-    future_events, recurring_projections = ledger_data
-    
-    # Track the lowest the balance drops relative to the minimum balance
-    max_shortfall = 0.0
-    running_bal = start_bal
-    
-    for day_offset in range(91):
-        current_day = request_date + timedelta(days=day_offset)
-        
-        # 1. Apply Future One-Off Events for this day
-        day_events = future_events[future_events['settlement_date'] == current_day]
-        for _, ev in day_events.iterrows():
-            if ev['direction'] == 'debit':
-                running_bal -= ev['amount_home']
-            else:
-                running_bal += ev['amount_home']
-                
-        # 2. Apply Recurring Projections for this day
-        for proj in recurring_projections:
-            if proj['date'] == current_day:
-                if proj['direction'] == 'debit':
-                    running_bal -= proj['amount']
-                    
-        # 3. Check for shortfall
-        if running_bal < min_bal:
-            shortfall = min_bal - running_bal
-            if shortfall > max_shortfall:
-                max_shortfall = shortfall
-                
-    # The max safe to pay is the current buffer minus the worst shortfall we saw
-    safe_buffer = start_bal - min_bal
-    amount_safe_to_pay = max(0.0, safe_buffer - max_shortfall)
-    
-    return amount_safe_to_pay
+    # Recurrence detection: only when history supports it (>=2 settled occurrences, regular gaps)
+    past = ev[(ev['settlement_date'] < request_date) & (ev['status'] == 'settled')]
+    future_descs = set(future_events['description'])
+    projections = []
+    for desc, g in past.groupby('description'):
+        if desc in future_descs:
+            continue  # already explicitly scheduled; don't double count
+        g = g.sort_values('settlement_date')
+        hist = g['settlement_date'].tolist()
+        if len(hist) < 2:
+            continue
+        gaps = [(hist[i+1] - hist[i]).days for i in range(len(hist)-1)]
+        if max(gaps) - min(gaps) > 10:
+            continue  # irregular -> not recurring
+        freq = max(1, int(round(sum(gaps) / len(gaps))))
+        amt = g['amount_home'].mean()
+        direction = g['direction'].iloc[0]
+        nxt = hist[-1] + timedelta(days=freq)
+        while nxt < request_date:
+            nxt += timedelta(days=freq)
+        while nxt <= end:
+            projections.append({'date': nxt, 'amount': amt, 'direction': direction})
+            nxt += timedelta(days=freq)
+    return future_events, projections
 
-# --- 5. PLAN SELECTOR & ORCHESTRATOR ---
-def evaluate_plans(request, profile, amount_safe_to_pay, payment_options):
-    """Decides the best payment method based on the safe amount."""
-    req_amount = request['requested_amount']
-    
-    # Default fallback
-    decision = {
-        "amount_safe_to_pay": amount_safe_to_pay,
-        "affordability_status": "not_affordable",
-        "recommended_payment_method": "not_recommended",
-        "payment_plan": "none",
-        "earliest_date_for_full_payment": "",
-        "spending_changes_needed": "none",
-        "decision_explanation": f"Safe to pay {amount_safe_to_pay} today, but request is {req_amount}."
-    }
-    
-    # Scenario 1: Can afford in full right now!
-    if amount_safe_to_pay >= req_amount:
-        decision["affordability_status"] = "affordable_now"
-        decision["recommended_payment_method"] = "full_payment"
-        decision["payment_plan"] = f"{request['request_date'].strftime('%Y-%m-%d')}:{req_amount}"
-        decision["earliest_date_for_full_payment"] = request['request_date'].strftime('%Y-%m-%d')
-        decision["decision_explanation"] = f"User has enough safe buffer to pay {req_amount} in full today."
-        return decision
 
-    # Scenario 2: Can afford installments?
-    # Check if any payment option fits within the safe buffer
-    for _, opt in payment_options.iterrows():
-        if opt['payment_method'] == 'installments' and opt['payment_amount'] <= amount_safe_to_pay:
-            # Build the installment plan string
-            plan_str = []
-            pay_date = opt['first_payment_date']
-            for i in range(int(opt['number_of_payments'])):
-                plan_str.append(f"{pay_date.strftime('%Y-%m-%d')}:{opt['payment_amount']}")
-                pay_date += timedelta(days=int(opt['payment_frequency_days']))
-                
-            decision["affordability_status"] = "affordable_with_plan"
-            decision["recommended_payment_method"] = "installments"
-            decision["payment_plan"] = "|".join(plan_str)
-            decision["decision_explanation"] = f"Cannot pay in full, but can afford {opt['payment_amount']} installments."
-            return decision
+# --- 4. THE 90-DAY FORECAST ENGINE (v2: balance curve + capacity curve) ---
+def build_daily_balance(profile, ledger_data, request_date, horizon=90):
+    """Simulates balance day-by-day WITHOUT the request payment."""
+    future_events, projections = ledger_data
+    deltas = [0.0] * (horizon + 1)
 
-    return decision
+    fe = future_events[future_events['settlement_date'] <= request_date + timedelta(days=horizon)]
+    for _, e in fe.iterrows():
+        idx = (e['settlement_date'] - request_date).days
+        deltas[idx] += -e['amount_home'] if e['direction'] == 'debit' else e['amount_home']
+    for p in projections:
+        idx = (p['date'] - request_date).days
+        deltas[idx] += -p['amount'] if p['direction'] == 'debit' else p['amount']
+
+    balances, bal = [], float(profile['current_available_balance'])
+    for d in deltas:
+        bal += d
+        balances.append(bal)
+    dates = [request_date + timedelta(days=i) for i in range(horizon + 1)]
+    return dates, balances, float(profile['minimum_balance_to_keep'])
+
+
+def capacity_curve(balances, min_bal):
+    """caps[i] = max single payment safe on day i (balance never dips below min afterwards)."""
+    caps, running = [0.0]*len(balances), float('inf')
+    for i in range(len(balances)-1, -1, -1):
+        running = min(running, balances[i] - min_bal)
+        caps[i] = max(0.0, running)
+    return caps
+
+
+STRICT_HORIZON = True  # flip to False after calibration if samples show long installment plans
+
+
+def plan_is_safe(payments, dates, balances, min_bal, request_date, horizon=90):
+    """True if balance stays >= min_bal on every forecast day after applying plan payments."""
+    bal = list(balances)
+    for d, amt in payments:
+        if d < request_date:
+            return False
+        idx = (d - request_date).days
+        if idx > horizon:
+            if STRICT_HORIZON:
+                return False
+            continue
+        for t in range(idx, horizon+1):
+            bal[t] -= amt
+    return all(b >= min_bal - 1e-6 for b in bal)
+
+
+# --- 5. PLAN SELECTOR & ORCHESTRATOR (v2) ---
+def evaluate_plans(request, profile, forecast, options):
+    (dates, balances, min_bal), caps = forecast
+    req_date = request['request_date']
+    deadline = request['desired_completion_date']
+    requested = float(request['requested_amount'])
+    horizon = len(dates) - 1
+
+    considered = set(str(profile['payment_methods_user_will_consider']).split('|'))
+    max_months = profile['max_installment_months']
+    safe_today = round(min(caps[0], requested), 2)
+
+    efp_date = next((dates[i] for i, c in enumerate(caps) if c >= requested - 1e-6), None)
+    efp_str = efp_date.strftime('%Y-%m-%d') if efp_date is not None else ""
+
+    candidates = []
+
+    # FULL PAYMENT
+    if 'full_payment' in considered and caps[0] >= requested - 1e-6:
+        candidates.append(dict(method='full_payment', payments=[(req_date, requested)],
+                               total=requested, start=req_date, option_id=None,
+                               by_deadline=req_date <= deadline))
+
+    # PARTIAL PAYMENT (exactly two payments)
+    if ('partial_payment' in considered
+            and str(request['allows_partial_payment']).lower() == 'true'
+            and 0 < safe_today < requested
+            and efp_date is not None and efp_date <= deadline):
+        pays = [(req_date, safe_today), (efp_date, round(requested - safe_today, 2))]
+        if plan_is_safe(pays, dates, balances, min_bal, req_date, horizon):
+            candidates.append(dict(method='partial_payment', payments=pays, total=requested,
+                                   start=req_date, option_id=None, by_deadline=True))
+
+    # INSTALLMENTS (must match a supplied option + user preferences)
+    if 'installments' in considered:
+        for _, opt in options.iterrows():
+            if opt['payment_method'] != 'installments':
+                continue
+            if pd.notna(max_months) and int(opt['number_of_payments']) > int(max_months):
+                continue
+            pays, d = [], opt['first_payment_date']
+            for _ in range(int(opt['number_of_payments'])):
+                pays.append((d, float(opt['payment_amount'])))
+                d = d + timedelta(days=int(opt['payment_frequency_days']))
+            if pays[0][0] < req_date:
+                continue
+            if not plan_is_safe(pays, dates, balances, min_bal, req_date, horizon):
+                continue
+            candidates.append(dict(method='installments', payments=pays,
+                                   total=float(opt['total_payable_amount']), start=pays[0][0],
+                                   option_id=opt['payment_option_id'], by_deadline=pays[-1][0] <= deadline))
+
+    # WAIT (full payment becomes safe later)
+    if 'full_payment' in considered and efp_date is not None and efp_date > req_date:
+        candidates.append(dict(method='wait', payments=[(efp_date, requested)], total=requested,
+                               start=efp_date, option_id=None, by_deadline=efp_date <= deadline))
+
+        base = dict(amount_safe_to_pay=fmt(safe_today), spending_changes_needed='none',
+                earliest_date_for_full_payment=efp_str)
+
+    if not candidates:
+        base.update(affordability_status='affordable_later' if efp_date else 'not_affordable',
+                    recommended_payment_method='not_recommended', payment_plan='none',
+                    decision_explanation=f"Safe capacity today is {safe_today} of {requested}; "
+                                         f"full payment safe from {efp_str or 'beyond forecast'}.")
+        return base
+
+    # Official ranking: deadline, no changes, min total, earliest start, fewest payments, option id
+    candidates.sort(key=lambda c: (0 if c['by_deadline'] else 1, round(c['total'], 2),
+                                   c['start'], len(c['payments']), c['option_id'] or ''))
+    best = candidates[0]
+
+    status = {'full_payment': 'affordable_now', 'partial_payment': 'affordable_with_plan',
+              'installments': 'affordable_with_plan', 'wait': 'affordable_later'}[best['method']]
+    plan = 'none' if not best['payments'] else '|'.join(
+        f"{d.strftime('%Y-%m-%d')}:{fmt(a)}" for d, a in best['payments'])
+    base.update(affordability_status=status, recommended_payment_method=best['method'],
+                payment_plan=plan,
+                                  decision_explanation=explain(None, profile['home_currency'], requested,
+                                                 min_bal, safe_today, [], efp_str))
+
+    return base
 
 
 # --- 6. MAIN EXECUTION LOOP ---
@@ -232,8 +313,10 @@ def main():
         "recommended_payment_method", "payment_plan", "earliest_date_for_full_payment", 
         "spending_changes_needed", "decision_explanation"
     ]
+    data['events'] = data['events'].drop_duplicates(
+        subset=[c for c in data['events'].columns if c != 'event_id'])
     results = []
-    
+    (BASE_DIR / 'code' / 'usage_stats.json').write_text(json.dumps(USAGE, indent=2))
     print(f"Evaluating {len(data['requests'])} requests...")
     
     # Loop through every request
@@ -243,29 +326,58 @@ def main():
         
         # 1. Get User Profile
         profile = data['profiles'][data['profiles']['user_id'] == user_id].iloc[0]
-        
-        # 2. Build Ledger (Data up to request_date)
+        #2
         ledger_data = build_user_ledger(user_id, row['request_date'], data)
-        
-        # 3. Forecast 90 days (Returns the max safe amount to pay today)
-        amount_safe = calculate_90_day_forecast(profile, ledger_data, row['request_date'])
-        
-        # 4. Get Payment Options for this request
+        #3
+        forecast = (build_daily_balance(profile, ledger_data, row['request_date']),)
+        #4
+        forecast = (forecast[0], capacity_curve(forecast[0][1], forecast[0][2]))
+        #5
         options = data['payment_options'][data['payment_options']['request_id'] == request_id]
-        
-        # 5. Evaluate and decide
-        decision = evaluate_plans(row, profile, amount_safe, options)
+        #6
+        decision = evaluate_plans(row, profile, forecast, options)
         
         # Append to results
         result_row = {"request_id": request_id}
         result_row.update(decision)
         results.append(result_row)
-
+        
     # Save to output.csv
     output_df = pd.DataFrame(results, columns=output_columns)
     output_path = DATASET_DIR / "output.csv"
     output_df.to_csv(output_path, index=False)
     print(f"Success! Saved predictions to {output_path}")
+
+# ---------------------------JSON Section -------------------------------
+def fmt(x):
+    
+    x = round(float(x), 2)
+    if abs(x - round(x)) < 1e-9:
+        return str(int(round(x)))
+    return f"{x:.2f}".rstrip('0').rstrip('.')
+
+def fmt_comma(x):
+    x = round(float(x), 2)
+    if abs(x - round(x)) < 1e-9:
+        return f"{int(round(x)):,}"
+    return f"{x:,.2f}".rstrip('0').rstrip('.')
+
+def _long_date(d):
+    return f"{d.day} {d.strftime('%B %Y')}"
+
+def explain(method, cur, req, min_bal, safe, payments, efp_str):
+    C = lambda x: f"{cur} {fmt_comma(x)}"
+    if method == 'full_payment':
+        return f"Pay {C(req)} today. This leaves at least {C(min_bal)} available over the next 90 days."
+    if method == 'installments':
+        return f"Use {len(payments)} installments of {C(payments[0][1])}, starting {_long_date(payments[0][0])}. This leaves at least {C(min_bal)} available."
+    if method == 'wait':
+        return f"Wait until {_long_date(payments[0][0])}, then pay {C(req)} in full. Paying sooner would put the {C(min_bal)} minimum at risk."
+    if method == 'partial_payment':
+        return f"Pay {C(payments[0][1])} today and {C(payments[1][1])} on {_long_date(payments[1][0])}. This leaves at least {C(min_bal)} available."
+    if efp_str:
+        return f"Safe capacity today is {C(safe)} of {C(req)}; full payment becomes safe on {efp_str}, but no accepted payment method fits safely."
+    return f"Safe capacity today is {C(safe)} of {C(req)}; full payment is not safe within the next 90 days."
 
 if __name__ == "__main__":
     main()
