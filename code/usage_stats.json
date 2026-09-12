@@ -1,0 +1,6 @@
+{
+  "model": "gemini-3.6-flash",
+  "calls": 18,
+  "input_tokens": 4023,
+  "output_tokens": 406
+}

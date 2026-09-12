@@ -1,0 +1,670 @@
+{
+  "message_01": {
+    "type": "salary_update",
+    "amount": 42750000,
+    "currency": "IDR",
+    "effective_date": "2025-08-15"
+  },
+  "message_02": {
+    "type": "none"
+  },
+  "message_03": {
+    "type": "none"
+  },
+  "message_04": {
+    "type": "salary_update",
+    "amount": 1037.52,
+    "currency": "EUR",
+    "effective_date": null
+  },
+  "message_05": {
+    "type": "event_delay",
+    "description": "payroll",
+    "new_date": "2024-09-23"
+  },
+  "message_06": {
+    "type": "salary_update",
+    "amount": 1422.85,
+    "currency": "EUR",
+    "effective_date": null
+  },
+  "message_07": {
+    "type": "none"
+  },
+  "message_08": {
+    "type": "none"
+  },
+  "message_09": {
+    "type": "none"
+  },
+  "message_10": {
+    "type": "salary_update",
+    "amount": 2717,
+    "currency": "EUR",
+    "effective_date": "2025-08-15"
+  },
+  "message_11": {
+    "type": "salary_update",
+    "amount": 1661,
+    "currency": "EUR",
+    "effective_date": "2026-01-15"
+  },
+  "message_12": {
+    "type": "none"
+  },
+  "message_13": {
+    "type": "none"
+  },
+  "message_14": {
+    "type": "none"
+  },
+  "message_15": {
+    "type": "none"
+  },
+  "message_16": {
+    "type": "none"
+  },
+  "message_17": {
+    "type": "none"
+  },
+  "message_18": {
+    "type": "none"
+  },
+  "message_19": {
+    "type": "none"
+  },
+  "message_20": {
+    "type": "none"
+  },
+  "message_21": {
+    "type": "none"
+  },
+  "message_22": {
+    "type": "none"
+  },
+  "message_23": {
+    "type": "none"
+  },
+  "message_24": {
+    "type": "none"
+  },
+  "message_25": {
+    "type": "none"
+  },
+  "message_26": {
+    "type": "none"
+  },
+  "message_27": {
+    "type": "none"
+  },
+  "message_28": {
+    "type": "none"
+  },
+  "message_29": {
+    "type": "none"
+  },
+  "message_30": {
+    "type": "none"
+  },
+  "message_31": {
+    "type": "none"
+  },
+  "message_32": {
+    "type": "none"
+  },
+  "message_33": {
+    "type": "none"
+  },
+  "message_34": {
+    "type": "none"
+  },
+  "message_35": {
+    "type": "none"
+  },
+  "message_36": {
+    "type": "none"
+  },
+  "message_37": {
+    "type": "none"
+  },
+  "message_38": {
+    "type": "none"
+  },
+  "message_39": {
+    "type": "none"
+  },
+  "message_40": {
+    "type": "none"
+  },
+  "message_41": {
+    "type": "none"
+  },
+  "message_42": {
+    "type": "none"
+  },
+  "message_43": {
+    "type": "none"
+  },
+  "message_44": {
+    "type": "none"
+  },
+  "message_45": {
+    "type": "none"
+  },
+  "message_46": {
+    "type": "none"
+  },
+  "message_47": {
+    "type": "none"
+  },
+  "message_48": {
+    "type": "none"
+  },
+  "message_49": {
+    "type": "salary_update",
+    "amount": 116000,
+    "currency": "INR",
+    "effective_date": "2026-04-15"
+  },
+  "message_50": {
+    "type": "none"
+  },
+  "message_51": {
+    "type": "none"
+  },
+  "message_52": {
+    "type": "none"
+  },
+  "message_53": {
+    "type": "none"
+  },
+  "message_54": {
+    "type": "none"
+  },
+  "message_55": {
+    "type": "none"
+  },
+  "message_56": {
+    "type": "none"
+  },
+  "message_57": {
+    "type": "none"
+  },
+  "message_58": {
+    "type": "none"
+  },
+  "message_59": {
+    "type": "none"
+  },
+  "message_60": {
+    "type": "none"
+  },
+  "message_61": {
+    "type": "none"
+  },
+  "message_62": {
+    "type": "none"
+  },
+  "message_63": {
+    "type": "none"
+  },
+  "message_64": {
+    "type": "none"
+  },
+  "message_65": {
+    "type": "none"
+  },
+  "message_66": {
+    "type": "none"
+  },
+  "message_67": {
+    "type": "none"
+  },
+  "message_68": {
+    "type": "none"
+  },
+  "message_69": {
+    "type": "none"
+  },
+  "message_70": {
+    "type": "none"
+  },
+  "message_71": {
+    "type": "none"
+  },
+  "message_72": {
+    "type": "none"
+  },
+  "message_73": {
+    "type": "none"
+  },
+  "message_74": {
+    "type": "none"
+  },
+  "message_75": {
+    "type": "none"
+  },
+  "message_76": {
+    "type": "none"
+  },
+  "message_77": {
+    "type": "none"
+  },
+  "message_78": {
+    "type": "none"
+  },
+  "message_79": {
+    "type": "none"
+  },
+  "message_80": {
+    "type": "salary_update",
+    "amount": 1815.0,
+    "currency": "EUR",
+    "effective_date": "2024-12-15"
+  },
+  "message_81": {
+    "type": "none"
+  },
+  "message_82": {
+    "type": "none"
+  },
+  "message_83": {
+    "type": "none"
+  },
+  "message_84": {
+    "type": "none"
+  },
+  "message_85": {
+    "type": "none"
+  },
+  "message_86": {
+    "type": "none"
+  },
+  "message_87": {
+    "type": "none"
+  },
+  "message_88": {
+    "type": "none"
+  },
+  "message_89": {
+    "type": "none"
+  },
+  "message_90": {
+    "type": "none"
+  },
+  "message_91": {
+    "type": "none"
+  },
+  "message_92": {
+    "type": "none"
+  },
+  "message_93": {
+    "type": "none"
+  },
+  "message_94": {
+    "type": "none"
+  },
+  "message_95": {
+    "type": "none"
+  },
+  "message_96": {
+    "type": "none"
+  },
+  "message_97": {
+    "type": "none"
+  },
+  "message_98": {
+    "type": "none"
+  },
+  "message_99": {
+    "type": "none"
+  },
+  "message_100": {
+    "type": "none"
+  },
+  "message_101": {
+    "type": "none"
+  },
+  "message_102": {
+    "type": "none"
+  },
+  "message_103": {
+    "type": "none"
+  },
+  "message_104": {
+    "type": "none"
+  },
+  "message_105": {
+    "type": "none"
+  },
+  "message_106": {
+    "type": "none"
+  },
+  "message_107": {
+    "type": "none"
+  },
+  "message_108": {
+    "type": "none"
+  },
+  "message_109": {
+    "type": "none"
+  },
+  "message_110": {
+    "type": "none"
+  },
+  "message_111": {
+    "type": "none"
+  },
+  "message_112": {
+    "type": "none"
+  },
+  "message_113": {
+    "type": "none"
+  },
+  "message_114": {
+    "type": "none"
+  },
+  "message_115": {
+    "type": "none"
+  },
+  "message_116": {
+    "type": "none"
+  },
+  "message_117": {
+    "type": "none"
+  },
+  "message_118": {
+    "type": "none"
+  },
+  "message_119": {
+    "type": "none"
+  },
+  "message_120": {
+    "type": "none"
+  },
+  "message_121": {
+    "type": "none"
+  },
+  "message_122": {
+    "type": "none"
+  },
+  "message_123": {
+    "type": "none"
+  },
+  "message_124": {
+    "type": "none"
+  },
+  "message_125": {
+    "type": "none"
+  },
+  "message_126": {
+    "type": "none"
+  },
+  "message_127": {
+    "type": "none"
+  },
+  "message_128": {
+    "type": "none"
+  },
+  "message_129": {
+    "type": "none"
+  },
+  "message_130": {
+    "type": "none"
+  },
+  "message_131": {
+    "type": "none"
+  },
+  "message_132": {
+    "type": "none"
+  },
+  "message_133": {
+    "type": "none"
+  },
+  "message_134": {
+    "type": "none"
+  },
+  "message_135": {
+    "type": "none"
+  },
+  "message_136": {
+    "type": "none"
+  },
+  "message_137": {
+    "type": "none"
+  },
+  "message_138": {
+    "type": "none"
+  },
+  "message_139": {
+    "type": "none"
+  },
+  "message_140": {
+    "type": "none"
+  },
+  "message_141": {
+    "type": "none"
+  },
+  "message_142": {
+    "type": "none"
+  },
+  "message_143": {
+    "type": "none"
+  },
+  "message_144": {
+    "type": "none"
+  },
+  "message_145": {
+    "type": "none"
+  },
+  "message_146": {
+    "type": "none"
+  },
+  "message_147": {
+    "type": "none"
+  },
+  "message_148": {
+    "type": "none"
+  },
+  "message_149": {
+    "type": "none"
+  },
+  "message_150": {
+    "type": "none"
+  },
+  "message_151": {
+    "type": "none"
+  },
+  "message_152": {
+    "type": "none"
+  },
+  "message_153": {
+    "type": "none"
+  },
+  "message_154": {
+    "type": "none"
+  },
+  "message_155": {
+    "type": "none"
+  },
+  "message_156": {
+    "type": "none"
+  },
+  "message_157": {
+    "type": "none"
+  },
+  "message_158": {
+    "type": "none"
+  },
+  "message_159": {
+    "type": "none"
+  },
+  "message_160": {
+    "type": "none"
+  },
+  "message_161": {
+    "type": "none"
+  },
+  "message_162": {
+    "type": "none"
+  },
+  "message_163": {
+    "type": "none"
+  },
+  "message_164": {
+    "type": "none"
+  },
+  "message_165": {
+    "type": "none"
+  },
+  "message_166": {
+    "type": "none"
+  },
+  "message_167": {
+    "type": "none"
+  },
+  "message_168": {
+    "type": "none"
+  },
+  "message_169": {
+    "type": "none"
+  },
+  "message_170": {
+    "type": "none"
+  },
+  "message_171": {
+    "type": "none"
+  },
+  "message_172": {
+    "type": "none"
+  },
+  "message_173": {
+    "type": "none"
+  },
+  "message_174": {
+    "type": "none"
+  },
+  "message_175": {
+    "type": "none"
+  },
+  "message_176": {
+    "type": "none"
+  },
+  "message_177": {
+    "type": "none"
+  },
+  "message_178": {
+    "type": "none"
+  },
+  "message_179": {
+    "type": "none"
+  },
+  "message_180": {
+    "type": "none"
+  },
+  "message_181": {
+    "type": "none"
+  },
+  "message_182": {
+    "type": "none"
+  },
+  "message_183": {
+    "type": "none"
+  },
+  "message_184": {
+    "type": "none"
+  },
+  "message_185": {
+    "type": "none"
+  },
+  "message_186": {
+    "type": "none"
+  },
+  "message_187": {
+    "type": "none"
+  },
+  "message_188": {
+    "type": "none"
+  },
+  "message_189": {
+    "type": "none"
+  },
+  "message_190": {
+    "type": "none"
+  },
+  "message_191": {
+    "type": "none"
+  },
+  "message_192": {
+    "type": "none"
+  },
+  "message_193": {
+    "type": "none"
+  },
+  "message_194": {
+    "type": "none"
+  },
+  "message_195": {
+    "type": "none"
+  },
+  "message_196": {
+    "type": "none"
+  },
+  "message_197": {
+    "type": "none"
+  },
+  "message_198": {
+    "type": "none"
+  },
+  "message_199": {
+    "type": "none"
+  },
+  "message_200": {
+    "type": "none"
+  },
+  "message_201": {
+    "type": "none"
+  },
+  "message_202": {
+    "type": "none"
+  },
+  "message_203": {
+    "type": "none"
+  },
+  "message_204": {
+    "type": "none"
+  },
+  "message_205": {
+    "type": "none"
+  },
+  "message_206": {
+    "type": "none"
+  },
+  "message_207": {
+    "type": "none"
+  },
+  "message_208": {
+    "type": "none"
+  },
+  "message_209": {
+    "type": "none"
+  },
+  "message_210": {
+    "type": "none"
+  },
+  "message_211": {
+    "type": "none"
+  },
+  "message_212": {
+    "type": "none"
+  },
+  "message_213": {
+    "type": "none"
+  },
+  "message_214": {
+    "type": "none"
+  },
+  "message_215": {
+    "type": "none"
+  }
+}

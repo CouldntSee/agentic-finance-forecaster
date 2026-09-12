@@ -1,251 +1,251 @@
 request_id,amount_safe_to_pay,affordability_status,recommended_payment_method,payment_plan,earliest_date_for_full_payment,spending_changes_needed,decision_explanation
-request_26,15656000.0,affordable_now,full_payment,2025-08-03:15656000.0,2025-08-03,none,full_payment: safe capacity today 15656000.0; min balance 24768300.0; full amount safe from 2025-08-03.
-request_27,6670.0,affordable_now,full_payment,2026-07-05:6670.0,2026-07-05,none,full_payment: safe capacity today 6670.0; min balance 20500.0; full amount safe from 2026-07-05.
-request_28,355.58,affordable_later,wait,2024-07-14:1302.4,2024-07-14,none,wait: safe capacity today 355.58; min balance 1100.0; full amount safe from 2024-07-14.
-request_29,51524.0,affordable_now,full_payment,2025-11-04:51524.0,2025-11-04,none,full_payment: safe capacity today 51524.0; min balance 28300.0; full amount safe from 2025-11-04.
-request_30,775.2,affordable_with_plan,installments,2026-04-06:268.74|2026-05-06:268.74|2026-06-05:268.74,2026-04-06,none,installments: safe capacity today 775.2; min balance 900.0; full amount safe from 2026-04-06.
-request_31,4587244.35,affordable_later,wait,2024-09-14:18164000.0,2024-09-14,none,wait: safe capacity today 4587244.35; min balance 16588900.0; full amount safe from 2024-09-14.
-request_32,20553.26,affordable_later,wait,2025-02-15:40018.0,2025-02-15,none,wait: safe capacity today 20553.26; min balance 35700.0; full amount safe from 2025-02-15.
-request_33,51617.81,affordable_later,wait,2026-02-13:118000.0,2026-02-13,none,wait: safe capacity today 51617.81; min balance 102100.0; full amount safe from 2026-02-13.
-request_34,129400.0,affordable_now,full_payment,2024-12-04:129400.0,2024-12-04,none,full_payment: safe capacity today 129400.0; min balance 138500.0; full amount safe from 2024-12-04.
-request_35,25688.72,affordable_later,wait,2026-01-16:212000.0,2026-01-16,none,wait: safe capacity today 25688.72; min balance 106400.0; full amount safe from 2026-01-16.
-request_36,441.56,not_affordable,not_recommended,none,,none,Safe capacity today is 441.56 of 3954.0; full payment safe from beyond forecast.
-request_37,6805872.9,affordable_later,wait,2024-04-17:14649000.0,2024-04-17,none,wait: safe capacity today 6805872.9; min balance 17056200.0; full amount safe from 2024-04-17.
-request_38,264.7,affordable_later,wait,2025-09-13:971.3,2025-09-13,none,wait: safe capacity today 264.7; min balance 400.0; full amount safe from 2025-09-13.
-request_39,162426.27,affordable_later,wait,2026-04-14:208600.0,2026-04-14,none,wait: safe capacity today 162426.27; min balance 213400.0; full amount safe from 2026-04-14.
-request_40,410.81,affordable_later,wait,2024-07-14:1290.3,2024-07-14,none,wait: safe capacity today 410.81; min balance 1500.0; full amount safe from 2024-07-14.
-request_41,10668198.31,affordable_later,wait,2025-11-14:38760000.0,2025-11-14,none,wait: safe capacity today 10668198.31; min balance 25366600.0; full amount safe from 2025-11-14.
-request_42,52100.0,affordable_now,full_payment,2026-01-05:52100.0,2026-01-05,none,full_payment: safe capacity today 52100.0; min balance 113100.0; full amount safe from 2026-01-05.
-request_43,9830228.11,affordable_later,wait,2024-11-12:43339000.0,2024-11-12,none,wait: safe capacity today 9830228.11; min balance 21398000.0; full amount safe from 2024-11-12.
-request_44,35499.5,affordable_later,wait,2025-04-18:95800.0,2025-04-18,none,wait: safe capacity today 35499.5; min balance 82900.0; full amount safe from 2025-04-18.
-request_45,4039676.49,not_affordable,not_recommended,none,,none,Safe capacity today is 4039676.49 of 21983000.0; full payment safe from beyond forecast.
-request_46,37417.85,affordable_with_plan,installments,2024-12-03:25714.0|2024-12-31:25714.0,2024-12-15,none,installments: safe capacity today 37417.85; min balance 84000.0; full amount safe from 2024-12-15.
-request_47,6480443.91,not_affordable,not_recommended,none,,none,Safe capacity today is 6480443.91 of 38114000.0; full payment safe from beyond forecast.
-request_48,45700.0,affordable_now,full_payment,2026-07-25:45700.0,2026-07-25,none,full_payment: safe capacity today 45700.0; min balance 71300.0; full amount safe from 2026-07-25.
-request_49,11714464.42,affordable_with_plan,installments,2024-03-18:11902106.67|2024-04-18:11902106.67|2024-05-19:11902106.67,2024-04-17,none,installments: safe capacity today 11714464.42; min balance 20275700.0; full amount safe from 2024-04-17.
-request_50,43900.0,affordable_now,full_payment,2025-08-06:43900.0,2025-08-06,none,full_payment: safe capacity today 43900.0; min balance 99700.0; full amount safe from 2025-08-06.
-request_51,2191000.0,affordable_now,full_payment,2026-01-03:2191000.0,2026-01-03,none,full_payment: safe capacity today 2191000.0; min balance 7811000.0; full amount safe from 2026-01-03.
-request_52,23586.86,affordable_later,wait,2024-06-14:28870.0,2024-06-14,none,wait: safe capacity today 23586.86; min balance 41500.0; full amount safe from 2024-06-14.
-request_53,714.42,affordable_with_plan,installments,2025-11-21:589.06|2025-12-19:589.06|2026-01-16:589.06,2025-12-14,none,installments: safe capacity today 714.42; min balance 2100.0; full amount safe from 2025-12-14.
-request_54,4640.54,not_affordable,not_recommended,none,,none,Safe capacity today is 4640.54 of 121528.0; full payment safe from beyond forecast.
-request_55,134268.75,affordable_with_plan,installments,2026-06-11:75781.33|2026-07-12:75781.33|2026-08-12:75781.33,2026-07-14,none,installments: safe capacity today 134268.75; min balance 124300.0; full amount safe from 2026-07-14.
-request_56,683.52,affordable_with_plan,installments,2025-02-03:458.42|2025-03-03:458.42,2025-02-14,none,installments: safe capacity today 683.52; min balance 2100.0; full amount safe from 2025-02-14.
-request_57,8568.47,not_affordable,not_recommended,none,,none,Safe capacity today is 8568.47 of 61446.0; full payment safe from beyond forecast.
-request_58,16226000.0,affordable_now,full_payment,2024-12-07:16226000.0,2024-12-07,none,full_payment: safe capacity today 16226000.0; min balance 14433900.0; full amount safe from 2024-12-07.
-request_59,140600.0,affordable_with_plan,installments,2025-05-07:48741.33|2025-06-04:48741.33|2025-07-02:48741.33,2025-05-04,none,installments: safe capacity today 140600.0; min balance 132600.0; full amount safe from 2025-05-04.
-request_60,172.1,affordable_later,wait,2026-01-14:199.89,2026-01-14,none,wait: safe capacity today 172.1; min balance 400.0; full amount safe from 2026-01-14.
-request_61,29062.0,affordable_with_plan,installments,2024-03-17:10074.83|2024-04-17:10074.83|2024-05-18:10074.83,2024-03-03,none,installments: safe capacity today 29062.0; min balance 36700.0; full amount safe from 2024-03-03.
-request_62,404.23,affordable_now,full_payment,2025-08-05:404.23,2025-08-05,none,full_payment: safe capacity today 404.23; min balance 1300.0; full amount safe from 2025-08-05.
-request_63,48396.59,affordable_with_plan,partial_payment,2026-07-07:48396.59|2026-08-14:295503.41,2026-08-14,none,partial_payment: safe capacity today 48396.59; min balance 153500.0; full amount safe from 2026-08-14.
-request_64,54149.31,affordable_later,not_recommended,none,2024-06-10,none,Safe capacity today is 54149.31 of 63700.0; full payment safe from 2024-06-10.
-request_65,7079.88,not_affordable,not_recommended,none,,none,Safe capacity today is 7079.88 of 54340.0; full payment safe from beyond forecast.
-request_66,22200.0,affordable_now,full_payment,2026-04-03:22200.0,2026-04-03,none,full_payment: safe capacity today 22200.0; min balance 80700.0; full amount safe from 2026-04-03.
-request_67,452.05,affordable_later,wait,2024-09-14:2094.0,2024-09-14,none,wait: safe capacity today 452.05; min balance 1200.0; full amount safe from 2024-09-14.
-request_68,1196.56,affordable_later,not_recommended,none,2025-04-29,none,Safe capacity today is 1196.56 of 2091.6; full payment safe from 2025-04-29.
-request_69,529.1,affordable_now,full_payment,2026-01-04:529.1,2026-01-04,none,full_payment: safe capacity today 529.1; min balance 700.0; full amount safe from 2026-01-04.
-request_70,60782.72,affordable_later,wait,2025-02-16:243900.0,2025-02-16,none,wait: safe capacity today 60782.72; min balance 115000.0; full amount safe from 2025-02-16.
-request_71,819076.46,not_affordable,not_recommended,none,,none,Safe capacity today is 819076.46 of 21451000.0; full payment safe from beyond forecast.
-request_72,11330.0,affordable_now,full_payment,2026-07-05:11330.0,2026-07-05,none,full_payment: safe capacity today 11330.0; min balance 12200.0; full amount safe from 2026-07-05.
-request_73,71400.0,affordable_now,full_payment,2023-01-20:71400.0,2023-01-20,none,full_payment: safe capacity today 71400.0; min balance 103200.0; full amount safe from 2023-01-20.
-request_74,5010.0,affordable_now,full_payment,2025-08-04:5010.0,2025-08-04,none,full_payment: safe capacity today 5010.0; min balance 21900.0; full amount safe from 2025-08-04.
-request_75,28270.0,affordable_with_plan,installments,2026-04-09:9800.27|2026-05-09:9800.27|2026-06-08:9800.27,2026-04-06,none,installments: safe capacity today 28270.0; min balance 39000.0; full amount safe from 2026-04-06.
-request_76,895.59,not_affordable,not_recommended,none,,none,Safe capacity today is 895.59 of 4455.6; full payment safe from beyond forecast.
-request_77,60094.23,affordable_later,wait,2025-11-14:60700.0,2025-11-14,none,wait: safe capacity today 60094.23; min balance 82200.0; full amount safe from 2025-11-14.
-request_78,50200.0,affordable_now,full_payment,2025-10-02:50200.0,2025-10-02,none,full_payment: safe capacity today 50200.0; min balance 55200.0; full amount safe from 2025-10-02.
-request_79,868.84,affordable_later,not_recommended,none,2024-09-14,none,Safe capacity today is 868.84 of 2151.6; full payment safe from 2024-09-14.
-request_80,125410.0,affordable_later,not_recommended,none,2025-03-16,none,Safe capacity today is 125410.0 of 217500.0; full payment safe from 2025-03-16.
-request_81,2076.0,affordable_now,full_payment,2026-07-03:2076.0,2026-07-03,none,full_payment: safe capacity today 2076.0; min balance 1600.0; full amount safe from 2026-07-03.
-request_82,422.63,affordable_later,wait,2025-01-16:1405.2,2025-01-16,none,wait: safe capacity today 422.63; min balance 1100.0; full amount safe from 2025-01-16.
-request_83,1494.16,not_affordable,not_recommended,none,,none,Safe capacity today is 1494.16 of 156200.0; full payment safe from beyond forecast.
-request_84,33692.81,affordable_later,wait,2026-05-14:95400.0,2026-05-14,none,wait: safe capacity today 33692.81; min balance 91300.0; full amount safe from 2026-05-14.
-request_85,448265.95,not_affordable,not_recommended,none,,none,Safe capacity today is 448265.95 of 19304000.0; full payment safe from beyond forecast.
-request_86,46300.0,affordable_now,full_payment,2025-08-03:46300.0,2025-08-03,none,full_payment: safe capacity today 46300.0; min balance 84900.0; full amount safe from 2025-08-03.
-request_87,17999.09,not_affordable,not_recommended,none,,none,Safe capacity today is 17999.09 of 487900.0; full payment safe from beyond forecast.
-request_88,11959.79,affordable_with_plan,installments,2024-06-14:9045.23|2024-07-15:9045.23|2024-08-15:9045.23,2024-07-14,none,installments: safe capacity today 11959.79; min balance 25800.0; full amount safe from 2024-07-14.
-request_89,10238397.21,affordable_with_plan,installments,2025-11-18:4768746.67|2025-12-16:4768746.67|2026-01-13:4768746.67,2025-11-14,none,installments: safe capacity today 10238397.21; min balance 12534700.0; full amount safe from 2025-11-14.
-request_90,2560.0,affordable_now,full_payment,2026-07-06:2560.0,2026-07-06,none,full_payment: safe capacity today 2560.0; min balance 7600.0; full amount safe from 2026-07-06.
-request_91,641.79,affordable_later,wait,2024-10-14:1927.2,2024-10-14,none,wait: safe capacity today 641.79; min balance 2100.0; full amount safe from 2024-10-14.
-request_92,34034.0,affordable_now,full_payment,2025-02-05:34034.0,2025-02-05,none,full_payment: safe capacity today 34034.0; min balance 28100.0; full amount safe from 2025-02-05.
-request_93,1729.2,affordable_now,full_payment,2026-04-07:1729.2,2026-04-07,none,full_payment: safe capacity today 1729.2; min balance 1900.0; full amount safe from 2026-04-07.
-request_94,572.0,affordable_now,full_payment,2024-12-04:572.0,2024-12-04,none,full_payment: safe capacity today 572.0; min balance 600.0; full amount safe from 2024-12-04.
-request_95,0.0,not_affordable,not_recommended,none,,none,Safe capacity today is 0.0 of 553000.0; full payment safe from beyond forecast.
-request_96,80365.42,affordable_with_plan,installments,2026-01-10:31269.33|2026-02-09:31269.33|2026-03-11:31269.33,2026-01-14,none,installments: safe capacity today 80365.42; min balance 56500.0; full amount safe from 2026-01-14.
-request_97,3037.52,affordable_with_plan,installments,2024-03-19:8145.28|2024-04-19:8145.28|2024-05-20:8145.28,2024-03-15,none,installments: safe capacity today 3037.52; min balance 29700.0; full amount safe from 2024-03-15.
-request_98,9090.16,affordable_later,wait,2025-10-13:27148.0,2025-10-13,none,wait: safe capacity today 9090.16; min balance 30000.0; full amount safe from 2025-10-13.
-request_99,18062.0,affordable_now,full_payment,2026-07-04:18062.0,2026-07-04,none,full_payment: safe capacity today 18062.0; min balance 49100.0; full amount safe from 2026-07-04.
-request_100,29575.83,affordable_with_plan,installments,2024-06-13:12866.19|2024-07-14:12866.19|2024-08-14:12866.19,2024-06-14,none,installments: safe capacity today 29575.83; min balance 32500.0; full amount safe from 2024-06-14.
-request_101,143500.0,affordable_now,full_payment,2025-11-03:143500.0,2025-11-03,none,full_payment: safe capacity today 143500.0; min balance 187400.0; full amount safe from 2025-11-03.
-request_102,1716.0,affordable_with_plan,installments,2026-04-05:594.88|2026-05-05:594.88|2026-06-04:594.88,2026-04-05,none,installments: safe capacity today 1716.0; min balance 900.0; full amount safe from 2026-04-05.
-request_103,12633.55,not_affordable,not_recommended,none,,none,Safe capacity today is 12633.55 of 368300.0; full payment safe from beyond forecast.
-request_104,17204.0,affordable_now,full_payment,2025-02-04:17204.0,2025-02-04,none,full_payment: safe capacity today 17204.0; min balance 24700.0; full amount safe from 2025-02-04.
-request_105,44740.12,affordable_later,wait,2026-06-14:53500.0,2026-06-14,none,wait: safe capacity today 44740.12; min balance 73900.0; full amount safe from 2026-06-14.
-request_106,307.74,affordable_later,wait,2025-02-16:2207.7,2025-02-16,none,wait: safe capacity today 307.74; min balance 1200.0; full amount safe from 2025-02-16.
-request_107,0.0,not_affordable,not_recommended,none,,none,Safe capacity today is 0.0 of 2534.4; full payment safe from beyond forecast.
-request_108,3419.98,not_affordable,not_recommended,none,,none,Safe capacity today is 3419.98 of 55308.0; full payment safe from beyond forecast.
-request_109,818.85,affordable_with_plan,installments,2024-03-18:645.98|2024-04-18:645.98|2024-05-19:645.98,2024-03-15,none,installments: safe capacity today 818.85; min balance 1700.0; full amount safe from 2024-03-15.
-request_110,22352.0,affordable_with_plan,installments,2025-08-06:7748.69|2025-09-03:7748.69|2025-10-01:7748.69,2025-08-06,none,installments: safe capacity today 22352.0; min balance 11200.0; full amount safe from 2025-08-06.
-request_111,16625000.0,affordable_now,full_payment,2026-04-03:16625000.0,2026-04-03,none,full_payment: safe capacity today 16625000.0; min balance 23022800.0; full amount safe from 2026-04-03.
-request_112,271.7,affordable_now,full_payment,2024-06-05:271.7,2024-06-05,none,full_payment: safe capacity today 271.7; min balance 500.0; full amount safe from 2024-06-05.
-request_113,25059.07,affordable_later,wait,2026-09-14:36500.0,2026-09-14,none,wait: safe capacity today 25059.07; min balance 82300.0; full amount safe from 2026-09-14.
-request_114,65300.0,affordable_now,full_payment,2026-01-04:65300.0,2026-01-04,none,full_payment: safe capacity today 65300.0; min balance 113400.0; full amount safe from 2026-01-04.
-request_115,16712.71,affordable_later,wait,2024-11-13:80500.0,2024-11-13,none,wait: safe capacity today 16712.71; min balance 38800.0; full amount safe from 2024-11-13.
-request_116,21051.92,affordable_later,not_recommended,none,2025-04-15,none,Safe capacity today is 21051.92 of 241200.0; full payment safe from 2025-04-15.
-request_117,857.19,affordable_later,wait,2026-07-15:880.0,2026-07-15,none,wait: safe capacity today 857.19; min balance 1000.0; full amount safe from 2026-07-15.
-request_118,617.31,affordable_later,not_recommended,none,2025-02-16,none,Safe capacity today is 617.31 of 738.1; full payment safe from 2025-02-16.
-request_119,52639.34,affordable_later,not_recommended,none,2025-07-20,none,Safe capacity today is 52639.34 of 203500.0; full payment safe from 2025-07-20.
-request_120,7714000.0,affordable_now,full_payment,2026-04-06:7714000.0,2026-04-06,none,full_payment: safe capacity today 7714000.0; min balance 20050300.0; full amount safe from 2026-04-06.
-request_121,633.6,affordable_now,full_payment,2024-03-03:633.6,2024-03-03,none,full_payment: safe capacity today 633.6; min balance 800.0; full amount safe from 2024-03-03.
-request_122,20558000.0,affordable_with_plan,installments,2025-08-05:7126773.33|2025-09-02:7126773.33|2025-09-30:7126773.33,2025-08-05,none,installments: safe capacity today 20558000.0; min balance 12588500.0; full amount safe from 2025-08-05.
-request_123,4076000.0,affordable_now,full_payment,2026-01-07:4076000.0,2026-01-07,none,full_payment: safe capacity today 4076000.0; min balance 18091200.0; full amount safe from 2026-01-07.
-request_124,1492.43,affordable_with_plan,installments,2024-06-11:1076.12|2024-07-12:1076.12|2024-08-12:1076.12,2024-06-14,none,installments: safe capacity today 1492.43; min balance 1600.0; full amount safe from 2024-06-14.
-request_125,6468.0,affordable_now,full_payment,2025-11-06:6468.0,2025-11-06,none,full_payment: safe capacity today 6468.0; min balance 11300.0; full amount safe from 2025-11-06.
-request_126,159600.0,affordable_now,full_payment,2026-07-03:159600.0,2026-07-03,none,full_payment: safe capacity today 159600.0; min balance 129700.0; full amount safe from 2026-07-03.
-request_127,17266.2,affordable_later,wait,2024-09-12:23980.0,2024-09-12,none,wait: safe capacity today 17266.2; min balance 41000.0; full amount safe from 2024-09-12.
-request_128,25168.0,affordable_now,full_payment,2025-02-07:25168.0,2025-02-07,none,full_payment: safe capacity today 25168.0; min balance 42600.0; full amount safe from 2025-02-07.
-request_129,61.84,not_affordable,not_recommended,none,,none,Safe capacity today is 61.84 of 2668.8; full payment safe from beyond forecast.
-request_130,454.44,affordable_later,wait,2025-01-16:1978.8,2025-01-16,none,wait: safe capacity today 454.44; min balance 1400.0; full amount safe from 2025-01-16.
-request_131,0.0,not_affordable,not_recommended,none,,none,Safe capacity today is 0.0 of 1855.2; full payment safe from beyond forecast.
-request_132,379.86,affordable_now,full_payment,2026-01-05:379.86,2026-01-05,none,full_payment: safe capacity today 379.86; min balance 1100.0; full amount safe from 2026-01-05.
-request_133,15770000.0,affordable_later,not_recommended,none,2024-03-07,none,Safe capacity today is 15770000.0 of 15770000.0; full payment safe from 2024-03-07.
-request_134,7369219.37,affordable_later,wait,2025-08-14:21831000.0,2025-08-14,none,wait: safe capacity today 7369219.37; min balance 15902500.0; full amount safe from 2025-08-14.
-request_135,289.14,affordable_later,wait,2026-07-15:304.8,2026-07-15,none,wait: safe capacity today 289.14; min balance 500.0; full amount safe from 2026-07-15.
-request_136,560.4,affordable_now,full_payment,2024-06-03:560.4,2024-06-03,none,full_payment: safe capacity today 560.4; min balance 1100.0; full amount safe from 2024-06-03.
-request_137,37050.7,affordable_later,wait,2025-12-14:80100.0,2025-12-14,none,wait: safe capacity today 37050.7; min balance 71800.0; full amount safe from 2025-12-14.
-request_138,790.76,affordable_with_plan,installments,2026-04-07:435.74|2026-05-05:435.74|2026-06-02:435.74,2026-04-14,none,installments: safe capacity today 790.76; min balance 2300.0; full amount safe from 2026-04-14.
-request_139,1616.11,affordable_with_plan,installments,2024-09-07:802.88|2024-10-08:802.88|2024-11-08:802.88,2024-09-14,none,installments: safe capacity today 1616.11; min balance 1500.0; full amount safe from 2024-09-14.
-request_140,2515.56,not_affordable,not_recommended,none,,none,Safe capacity today is 2515.56 of 62832.0; full payment safe from beyond forecast.
-request_141,21464.07,not_affordable,not_recommended,none,,none,Safe capacity today is 21464.07 of 171600.0; full payment safe from beyond forecast.
-request_142,1263.6,affordable_now,full_payment,2024-12-05:1263.6,2024-12-05,none,full_payment: safe capacity today 1263.6; min balance 1700.0; full amount safe from 2024-12-05.
-request_143,2335.29,affordable_later,wait,2025-07-14:12584.0,2025-07-14,none,wait: safe capacity today 2335.29; min balance 11300.0; full amount safe from 2025-07-14.
-request_144,233.34,affordable_now,full_payment,2026-07-04:233.34,2026-07-04,none,full_payment: safe capacity today 233.34; min balance 600.0; full amount safe from 2026-07-04.
-request_145,50114.31,affordable_with_plan,installments,2024-03-20:75365.33|2024-04-20:75365.33|2024-05-21:75365.33,2024-04-17,none,installments: safe capacity today 50114.31; min balance 155400.0; full amount safe from 2024-04-17.
-request_146,0.0,not_affordable,not_recommended,none,,none,Safe capacity today is 0.0 of 449400.0; full payment safe from beyond forecast.
-request_147,387.76,affordable_later,not_recommended,none,2026-05-14,none,Safe capacity today is 387.76 of 1129.7; full payment safe from 2026-05-14.
-request_148,10440.53,affordable_with_plan,installments,2024-06-14:7710.56|2024-07-15:7710.56|2024-08-15:7710.56,2024-06-14,none,installments: safe capacity today 10440.53; min balance 20000.0; full amount safe from 2024-06-14.
-request_149,22729.58,affordable_with_plan,installments,2025-11-18:12706.03|2025-12-16:12706.03|2026-01-13:12706.03,2025-11-14,none,installments: safe capacity today 22729.58; min balance 42100.0; full amount safe from 2025-11-14.
-request_150,326.56,affordable_with_plan,installments,2026-01-06:171.98|2026-02-05:171.98|2026-03-07:171.98,2026-02-13,none,installments: safe capacity today 326.56; min balance 700.0; full amount safe from 2026-02-13.
-request_151,26999000.0,affordable_now,full_payment,2024-09-03:26999000.0,2024-09-03,none,full_payment: safe capacity today 26999000.0; min balance 31633600.0; full amount safe from 2024-09-03.
-request_152,12388.99,affordable_with_plan,installments,2025-02-12:4812.43|2025-03-12:4812.43|2025-04-09:4812.43,2025-02-14,none,installments: safe capacity today 12388.99; min balance 11900.0; full amount safe from 2025-02-14.
-request_153,271.63,not_affordable,not_recommended,none,,none,Safe capacity today is 271.63 of 2830.8; full payment safe from beyond forecast.
-request_154,1625.8,affordable_with_plan,installments,2024-12-04:563.61|2025-01-04:563.61|2025-02-04:563.61,2024-12-04,none,installments: safe capacity today 1625.8; min balance 1300.0; full amount safe from 2024-12-04.
-request_155,112500.0,affordable_now,full_payment,2025-05-06:112500.0,2025-05-06,none,full_payment: safe capacity today 112500.0; min balance 56300.0; full amount safe from 2025-05-06.
-request_156,8422.92,affordable_later,wait,2026-06-13:43076.0,2026-06-13,none,wait: safe capacity today 8422.92; min balance 26900.0; full amount safe from 2026-06-13.
-request_157,5956686.96,affordable_later,wait,2024-04-17:23503000.0,2024-04-17,none,wait: safe capacity today 5956686.96; min balance 15714100.0; full amount safe from 2024-04-17.
-request_158,242600.0,affordable_with_plan,installments,2025-08-07:84101.33|2025-09-04:84101.33|2025-10-02:84101.33,2025-08-07,none,installments: safe capacity today 242600.0; min balance 131400.0; full amount safe from 2025-08-07.
-request_159,6616.97,not_affordable,not_recommended,none,,none,Safe capacity today is 6616.97 of 13398.0; full payment safe from beyond forecast.
-request_160,482.23,affordable_with_plan,installments,2024-06-13:432.05|2024-07-14:432.05|2024-08-14:432.05,2024-07-14,none,installments: safe capacity today 482.23; min balance 1200.0; full amount safe from 2024-07-14.
-request_161,0.0,not_affordable,not_recommended,none,,none,Safe capacity today is 0.0 of 21204000.0; full payment safe from beyond forecast.
-request_162,1312226.28,not_affordable,not_recommended,none,,none,Safe capacity today is 1312226.28 of 83923000.0; full payment safe from beyond forecast.
-request_163,9938612.7,affordable_later,not_recommended,none,2024-11-13,none,Safe capacity today is 9938612.7 of 19304000.0; full payment safe from 2024-11-13.
-request_164,27018000.0,affordable_with_plan,installments,2025-02-11:9366240.0|2025-03-11:9366240.0|2025-04-08:9366240.0,2025-02-04,none,installments: safe capacity today 27018000.0; min balance 29550500.0; full amount safe from 2025-02-04.
-request_165,80600.0,affordable_now,full_payment,2026-04-06:80600.0,2026-04-06,none,full_payment: safe capacity today 80600.0; min balance 95000.0; full amount safe from 2026-04-06.
-request_166,2907.6,affordable_with_plan,installments,2024-12-03:1007.97|2025-01-03:1007.97|2025-02-03:1007.97,2024-12-03,none,installments: safe capacity today 2907.6; min balance 1700.0; full amount safe from 2024-12-03.
-request_167,0.0,not_affordable,not_recommended,none,,none,Safe capacity today is 0.0 of 43802.0; full payment safe from beyond forecast.
-request_168,43422.14,affordable_with_plan,partial_payment,2026-01-07:43422.14|2026-01-14:5957.86,2026-01-14,none,partial_payment: safe capacity today 43422.14; min balance 114400.0; full amount safe from 2026-01-14.
-request_169,41976.0,affordable_now,full_payment,2024-03-04:41976.0,2024-03-04,none,full_payment: safe capacity today 41976.0; min balance 18700.0; full amount safe from 2024-03-04.
-request_170,34482982.15,affordable_with_plan,installments,2025-08-06:12804480.0|2025-09-03:12804480.0|2025-10-01:12804480.0,2025-08-14,none,installments: safe capacity today 34482982.15; min balance 24715800.0; full amount safe from 2025-08-14.
-request_171,0.0,not_affordable,not_recommended,none,,none,Safe capacity today is 0.0 of 1878.8; full payment safe from beyond forecast.
-request_172,10161.31,affordable_with_plan,installments,2024-06-05:5304.0|2024-07-03:5304.0,2024-06-14,none,installments: safe capacity today 10161.31; min balance 27200.0; full amount safe from 2024-06-14.
-request_173,74438.18,affordable_with_plan,installments,2025-11-21:39173.33|2025-12-19:39173.33|2026-01-16:39173.33,2025-11-14,none,installments: safe capacity today 74438.18; min balance 79100.0; full amount safe from 2025-11-14.
-request_174,1146.2,affordable_with_plan,installments,2026-04-04:397.35|2026-05-04:397.35|2026-06-03:397.35,2026-04-04,none,installments: safe capacity today 1146.2; min balance 700.0; full amount safe from 2026-04-04.
-request_175,2346.3,affordable_now,full_payment,2024-09-06:2346.3,2024-09-06,none,full_payment: safe capacity today 2346.3; min balance 1700.0; full amount safe from 2024-09-06.
-request_176,467.05,affordable_later,wait,2025-04-25:1239.7,2025-04-25,none,wait: safe capacity today 467.05; min balance 600.0; full amount safe from 2025-04-25.
-request_177,1017.6,affordable_now,full_payment,2026-01-05:1017.6,2026-01-05,none,full_payment: safe capacity today 1017.6; min balance 1300.0; full amount safe from 2026-01-05.
-request_178,2938.1,affordable_with_plan,installments,2024-12-07:1018.54|2025-01-07:1018.54|2025-02-07:1018.54,2024-12-07,none,installments: safe capacity today 2938.1; min balance 1400.0; full amount safe from 2024-12-07.
-request_179,7165053.44,affordable_later,wait,2025-07-14:41648000.0,2025-07-14,none,wait: safe capacity today 7165053.44; min balance 41430800.0; full amount safe from 2025-07-14.
-request_180,66500.0,affordable_now,full_payment,2026-07-06:66500.0,2026-07-06,none,full_payment: safe capacity today 66500.0; min balance 37300.0; full amount safe from 2026-07-06.
-request_181,364.88,not_affordable,not_recommended,none,,none,Safe capacity today is 364.88 of 5059.2; full payment safe from beyond forecast.
-request_182,65714.0,affordable_now,full_payment,2025-08-05:65714.0,2025-08-05,none,full_payment: safe capacity today 65714.0; min balance 31100.0; full amount safe from 2025-08-05.
-request_183,20913178.09,not_affordable,not_recommended,none,,none,Safe capacity today is 20913178.09 of 26866000.0; full payment safe from beyond forecast.
-request_184,11996.97,not_affordable,not_recommended,none,,none,Safe capacity today is 11996.97 of 251900.0; full payment safe from beyond forecast.
-request_185,526.39,affordable_later,wait,2025-12-14:1257.3,2025-12-14,none,wait: safe capacity today 526.39; min balance 1300.0; full amount safe from 2025-12-14.
-request_186,12808.19,affordable_later,wait,2026-03-15:26554.0,2026-03-15,none,wait: safe capacity today 12808.19; min balance 22000.0; full amount safe from 2026-03-15.
-request_187,37577.48,affordable_later,wait,2024-11-12:187500.0,2024-11-12,none,wait: safe capacity today 37577.48; min balance 128300.0; full amount safe from 2024-11-12.
-request_188,88.58,not_affordable,not_recommended,none,,none,Safe capacity today is 88.58 of 2464.0; full payment safe from beyond forecast.
-request_189,488.4,affordable_now,full_payment,2026-07-04:488.4,2026-07-04,none,full_payment: safe capacity today 488.4; min balance 400.0; full amount safe from 2026-07-04.
-request_190,732.87,affordable_later,wait,2024-12-15:2557.5,2024-12-15,none,wait: safe capacity today 732.87; min balance 1600.0; full amount safe from 2024-12-15.
-request_191,664.4,affordable_now,full_payment,2025-05-03:664.4,2025-05-03,none,full_payment: safe capacity today 664.4; min balance 500.0; full amount safe from 2025-05-03.
-request_192,298.81,affordable_later,wait,2026-05-14:2046.0,2026-05-14,none,wait: safe capacity today 298.81; min balance 1000.0; full amount safe from 2026-05-14.
-request_193,30.52,affordable_with_plan,installments,2024-03-21:420.23|2024-04-21:420.23|2024-05-22:420.23,2024-04-17,none,installments: safe capacity today 30.52; min balance 1000.0; full amount safe from 2024-04-17.
-request_194,39451.79,affordable_later,wait,2025-10-27:132800.0,2025-10-27,none,wait: safe capacity today 39451.79; min balance 113600.0; full amount safe from 2025-10-27.
-request_195,1038.44,affordable_with_plan,installments,2026-01-09:405.74|2026-02-08:405.74|2026-03-10:405.74,2026-01-14,none,installments: safe capacity today 1038.44; min balance 700.0; full amount safe from 2026-01-14.
-request_196,762.3,affordable_now,full_payment,2024-06-03:762.3,2024-06-03,none,full_payment: safe capacity today 762.3; min balance 500.0; full amount safe from 2024-06-03.
-request_197,0.0,not_affordable,not_recommended,none,,none,Safe capacity today is 0.0 of 50939000.0; full payment safe from beyond forecast.
-request_198,185800.0,affordable_now,full_payment,2026-07-07:185800.0,2026-07-07,none,full_payment: safe capacity today 185800.0; min balance 124300.0; full amount safe from 2026-07-07.
-request_199,23674000.0,affordable_with_plan,installments,2024-09-07:8206986.67|2024-10-08:8206986.67|2024-11-08:8206986.67,2024-09-04,none,installments: safe capacity today 23674000.0; min balance 25359500.0; full amount safe from 2024-09-04.
-request_200,21717000.0,affordable_now,full_payment,2025-02-06:21717000.0,2025-02-06,none,full_payment: safe capacity today 21717000.0; min balance 20114600.0; full amount safe from 2025-02-06.
-request_201,23997000.0,affordable_now,full_payment,2026-04-03:23997000.0,2026-04-03,none,full_payment: safe capacity today 23997000.0; min balance 17304500.0; full amount safe from 2026-04-03.
-request_202,123900.0,affordable_now,full_payment,2024-12-05:123900.0,2024-12-05,none,full_payment: safe capacity today 123900.0; min balance 147800.0; full amount safe from 2024-12-05.
-request_203,1442.1,affordable_with_plan,installments,2025-05-10:499.93|2025-06-07:499.93|2025-07-05:499.93,2025-05-07,none,installments: safe capacity today 1442.1; min balance 1400.0; full amount safe from 2025-05-07.
-request_204,588.74,affordable_now,full_payment,2026-01-04:588.74,2026-01-04,none,full_payment: safe capacity today 588.74; min balance 1300.0; full amount safe from 2026-01-04.
-request_205,10621000.0,affordable_now,full_payment,2024-03-06:10621000.0,2024-03-06,none,full_payment: safe capacity today 10621000.0; min balance 13994300.0; full amount safe from 2024-03-06.
-request_206,1404.7,affordable_with_plan,installments,2025-08-03:486.96|2025-08-31:486.96|2025-09-28:486.96,2025-08-03,none,installments: safe capacity today 1404.7; min balance 900.0; full amount safe from 2025-08-03.
-request_207,5420.03,affordable_later,wait,2026-07-15:11830.0,2026-07-15,none,wait: safe capacity today 5420.03; min balance 13600.0; full amount safe from 2026-07-15.
-request_208,2984518.4,affordable_later,wait,2024-06-14:4413000.0,2024-06-14,none,wait: safe capacity today 2984518.4; min balance 10470700.0; full amount safe from 2024-06-14.
-request_209,2046.7,affordable_later,not_recommended,none,2026-01-13,none,Safe capacity today is 2046.7 of 56914.0; full payment safe from 2026-01-13.
-request_210,823.51,affordable_with_plan,installments,2026-04-06:471.48|2026-05-04:471.48|2026-06-01:471.48,2026-04-14,none,installments: safe capacity today 823.51; min balance 2000.0; full amount safe from 2026-04-14.
-request_211,205.02,affordable_later,wait,2024-09-14:1788.6,2024-09-14,none,wait: safe capacity today 205.02; min balance 1500.0; full amount safe from 2024-09-14.
-request_212,7487177.49,not_affordable,not_recommended,none,,none,Safe capacity today is 7487177.49 of 71934000.0; full payment safe from beyond forecast.
-request_213,3362.4,affordable_with_plan,installments,2026-01-21:1165.63|2026-02-20:1165.63|2026-03-22:1165.63,2026-01-07,none,installments: safe capacity today 3362.4; min balance 2100.0; full amount safe from 2026-01-07.
-request_214,69750.0,affordable_with_plan,installments,2024-12-04:36270.0|2025-01-01:36270.0,2024-12-04,none,installments: safe capacity today 69750.0; min balance 174900.0; full amount safe from 2024-12-04.
-request_215,29986.0,affordable_with_plan,installments,2025-05-09:10395.15|2025-06-06:10395.15|2025-07-04:10395.15,2025-05-06,none,installments: safe capacity today 29986.0; min balance 15700.0; full amount safe from 2025-05-06.
-request_216,547.68,not_affordable,not_recommended,none,,none,Safe capacity today is 547.68 of 3332.4; full payment safe from beyond forecast.
-request_217,19813.93,affordable_with_plan,installments,2024-03-19:12889.07|2024-04-19:12889.07|2024-05-20:12889.07,2024-03-15,none,installments: safe capacity today 19813.93; min balance 26800.0; full amount safe from 2024-03-15.
-request_218,28127745.57,affordable_with_plan,installments,2025-08-07:21195893.33|2025-09-04:21195893.33|2025-10-02:21195893.33,2025-08-14,none,installments: safe capacity today 28127745.57; min balance 34477200.0; full amount safe from 2025-08-14.
-request_219,1365.42,affordable_with_plan,installments,2026-04-07:580.01|2026-05-07:580.01|2026-06-06:580.01,2026-04-14,none,installments: safe capacity today 1365.42; min balance 1100.0; full amount safe from 2026-04-14.
-request_220,213.25,affordable_later,not_recommended,none,2024-08-13,none,Safe capacity today is 213.25 of 3118.5; full payment safe from 2024-08-13.
-request_221,109800.0,affordable_now,full_payment,2025-11-03:109800.0,2025-11-03,none,full_payment: safe capacity today 109800.0; min balance 81500.0; full amount safe from 2025-11-03.
-request_222,34078.0,affordable_now,full_payment,2026-01-05:34078.0,2026-01-05,none,full_payment: safe capacity today 34078.0; min balance 27300.0; full amount safe from 2026-01-05.
-request_223,898.7,affordable_now,full_payment,2024-09-07:898.7,2024-09-07,none,full_payment: safe capacity today 898.7; min balance 800.0; full amount safe from 2024-09-07.
-request_224,10327000.0,affordable_with_plan,installments,2025-02-04:5370040.0|2025-03-04:5370040.0,2025-02-04,none,installments: safe capacity today 10327000.0; min balance 22187600.0; full amount safe from 2025-02-04.
-request_225,12210856.51,affordable_with_plan,installments,2026-07-20:7647120.0|2026-08-19:7647120.0|2026-09-18:7647120.0,2026-07-15,none,installments: safe capacity today 12210856.51; min balance 17670700.0; full amount safe from 2026-07-15.
-request_226,157000.0,affordable_now,full_payment,2024-12-03:157000.0,2024-12-03,none,full_payment: safe capacity today 157000.0; min balance 209400.0; full amount safe from 2024-12-03.
-request_227,7263.23,not_affordable,not_recommended,none,,none,Safe capacity today is 7263.23 of 259700.0; full payment safe from beyond forecast.
-request_228,5917644.23,not_affordable,not_recommended,none,,none,Safe capacity today is 5917644.23 of 63327000.0; full payment safe from beyond forecast.
-request_229,464.23,affordable_with_plan,installments,2024-03-18:529.29|2024-04-18:529.29|2024-05-19:529.29,2024-04-17,none,installments: safe capacity today 464.23; min balance 1000.0; full amount safe from 2024-04-17.
-request_230,3537.6,affordable_now,full_payment,2025-08-06:3537.6,2025-08-06,none,full_payment: safe capacity today 3537.6; min balance 2000.0; full amount safe from 2025-08-06.
-request_231,35706.0,affordable_with_plan,installments,2026-01-06:12378.08|2026-02-05:12378.08|2026-03-07:12378.08,2026-01-03,none,installments: safe capacity today 35706.0; min balance 24300.0; full amount safe from 2026-01-03.
-request_232,1069.42,affordable_later,wait,2024-07-14:1970.1,2024-07-14,none,wait: safe capacity today 1069.42; min balance 2400.0; full amount safe from 2024-07-14.
-request_233,0.0,not_affordable,not_recommended,none,,none,Safe capacity today is 0.0 of 6241000.0; full payment safe from beyond forecast.
-request_234,195.84,affordable_later,wait,2026-09-13:1213.3,2026-09-13,none,wait: safe capacity today 195.84; min balance 700.0; full amount safe from 2026-09-13.
-request_235,967.2,affordable_now,full_payment,2024-09-06:967.2,2024-09-06,none,full_payment: safe capacity today 967.2; min balance 700.0; full amount safe from 2024-09-06.
-request_236,6569494.7,not_affordable,not_recommended,none,,none,Safe capacity today is 6569494.7 of 52383000.0; full payment safe from beyond forecast.
-request_237,23826000.0,affordable_now,full_payment,2026-04-05:23826000.0,2026-04-05,none,full_payment: safe capacity today 23826000.0; min balance 22431500.0; full amount safe from 2026-04-05.
-request_238,663.6,affordable_with_plan,installments,2024-12-07:230.05|2025-01-07:230.05|2025-02-07:230.05,2024-12-07,none,installments: safe capacity today 663.6; min balance 700.0; full amount safe from 2024-12-07.
-request_239,642.0,affordable_now,full_payment,2025-05-04:642.0,2025-05-04,none,full_payment: safe capacity today 642.0; min balance 600.0; full amount safe from 2025-05-04.
-request_240,20020.0,not_affordable,not_recommended,none,,none,Safe capacity today is 20020.0 of 101200.0; full payment safe from beyond forecast.
-request_241,21052000.0,affordable_with_plan,installments,2024-03-17:7298026.67|2024-04-17:7298026.67|2024-05-18:7298026.67,2024-03-03,none,installments: safe capacity today 21052000.0; min balance 19252000.0; full amount safe from 2024-03-03.
-request_242,0.0,not_affordable,not_recommended,none,,none,Safe capacity today is 0.0 of 1966.8; full payment safe from beyond forecast.
-request_243,17468.0,affordable_now,full_payment,2026-07-07:17468.0,2026-07-07,none,full_payment: safe capacity today 17468.0; min balance 19900.0; full amount safe from 2026-07-07.
-request_244,49918.0,affordable_now,full_payment,2024-06-04:49918.0,2024-06-04,none,full_payment: safe capacity today 49918.0; min balance 45900.0; full amount safe from 2024-06-04.
-request_245,43928.16,affordable_later,wait,2025-12-14:128500.0,2025-12-14,none,wait: safe capacity today 43928.16; min balance 94600.0; full amount safe from 2025-12-14.
-request_246,64086.0,affordable_with_plan,installments,2026-04-03:22216.48|2026-05-03:22216.48|2026-06-02:22216.48,2026-04-03,none,installments: safe capacity today 64086.0; min balance 39300.0; full amount safe from 2026-04-03.
-request_247,1059.3,affordable_now,full_payment,2024-09-05:1059.3,2024-09-05,none,full_payment: safe capacity today 1059.3; min balance 1300.0; full amount safe from 2024-09-05.
-request_248,818.22,not_affordable,not_recommended,none,,none,Safe capacity today is 818.22 of 1965.6; full payment safe from beyond forecast.
-request_249,187.78,affordable_later,wait,2026-02-13:643.2,2026-02-13,none,wait: safe capacity today 187.78; min balance 600.0; full amount safe from 2026-02-13.
-request_250,17705.54,not_affordable,not_recommended,none,,none,Safe capacity today is 17705.54 of 124278.0; full payment safe from beyond forecast.
-request_251,1513.6,affordable_later,not_recommended,none,2025-05-03,none,Safe capacity today is 1513.6 of 1513.6; full payment safe from 2025-05-03.
-request_252,5021325.31,affordable_later,wait,2026-08-14:28082000.0,2026-08-14,none,wait: safe capacity today 5021325.31; min balance 15152200.0; full amount safe from 2026-08-14.
-request_253,1364.63,affordable_with_plan,installments,2024-03-21:984.6|2024-04-21:984.6|2024-05-22:984.6,2024-05-18,none,installments: safe capacity today 1364.63; min balance 2300.0; full amount safe from 2024-05-18.
-request_254,943.93,affordable_later,wait,2025-09-13:3535.2,2025-09-13,none,wait: safe capacity today 943.93; min balance 2500.0; full amount safe from 2025-09-13.
-request_255,3345000.0,affordable_now,full_payment,2026-04-06:3345000.0,2026-04-06,none,full_payment: safe capacity today 3345000.0; min balance 9813900.0; full amount safe from 2026-04-06.
-request_256,173026.79,affordable_with_plan,installments,2024-06-10:75816.0|2024-07-11:75816.0|2024-08-11:75816.0,2024-06-14,none,installments: safe capacity today 173026.79; min balance 168600.0; full amount safe from 2024-06-14.
-request_257,587.2,affordable_later,wait,2025-11-14:1352.4,2025-11-14,none,wait: safe capacity today 587.2; min balance 1600.0; full amount safe from 2025-11-14.
-request_258,1113.6,affordable_now,full_payment,2026-01-07:1113.6,2026-01-07,none,full_payment: safe capacity today 1113.6; min balance 500.0; full amount safe from 2026-01-07.
-request_259,458.49,affordable_later,wait,2024-11-13:935.0,2024-11-13,none,wait: safe capacity today 458.49; min balance 600.0; full amount safe from 2024-11-13.
-request_260,8678732.72,affordable_with_plan,partial_payment,2025-02-06:8678732.72|2025-03-16:43400267.28,2025-03-16,none,partial_payment: safe capacity today 8678732.72; min balance 20727700.0; full amount safe from 2025-03-16.
-request_261,1830.4,affordable_now,full_payment,2026-07-03:1830.4,2026-07-03,none,full_payment: safe capacity today 1830.4; min balance 1500.0; full amount safe from 2026-07-03.
-request_262,9236000.0,affordable_now,full_payment,2024-12-05:9236000.0,2024-12-05,none,full_payment: safe capacity today 9236000.0; min balance 31018500.0; full amount safe from 2024-12-05.
-request_263,7870.27,not_affordable,not_recommended,none,,none,Safe capacity today is 7870.27 of 51546.0; full payment safe from beyond forecast.
-request_264,27327.12,affordable_later,wait,2026-05-14:111300.0,2026-05-14,none,wait: safe capacity today 27327.12; min balance 59500.0; full amount safe from 2026-05-14.
-request_265,45970.0,affordable_now,full_payment,2024-03-06:45970.0,2024-03-06,none,full_payment: safe capacity today 45970.0; min balance 189700.0; full amount safe from 2024-03-06.
-request_266,935.0,affordable_with_plan,installments,2025-08-03:324.13|2025-08-31:324.13|2025-09-28:324.13,2025-08-03,none,installments: safe capacity today 935.0; min balance 900.0; full amount safe from 2025-08-03.
-request_267,884.6,not_affordable,not_recommended,none,,none,Safe capacity today is 884.6 of 1925.0; full payment safe from beyond forecast.
-request_268,1134.52,affordable_with_plan,installments,2024-06-14:841.22|2024-07-15:841.22|2024-08-15:841.22,2024-08-13,none,installments: safe capacity today 1134.52; min balance 1400.0; full amount safe from 2024-08-13.
-request_269,0.0,not_affordable,not_recommended,none,,none,Safe capacity today is 0.0 of 15490.0; full payment safe from beyond forecast.
-request_270,157.62,affordable_later,not_recommended,none,2026-08-14,none,Safe capacity today is 157.62 of 3028.8; full payment safe from 2026-08-14.
-request_271,7359.73,not_affordable,not_recommended,none,,none,Safe capacity today is 7359.73 of 91300.0; full payment safe from beyond forecast.
-request_272,6695495.87,affordable_with_plan,installments,2025-02-12:4709466.67|2025-03-12:4709466.67|2025-04-09:4709466.67,2025-03-16,none,installments: safe capacity today 6695495.87; min balance 7508600.0; full amount safe from 2025-03-16.
-request_273,9642954.93,affordable_with_plan,installments,2026-04-07:5498480.0|2026-05-05:5498480.0|2026-06-02:5498480.0,2026-04-14,none,installments: safe capacity today 9642954.93; min balance 18774600.0; full amount safe from 2026-04-14.
-request_274,2326.54,affordable_with_plan,installments,2024-12-04:940.75|2025-01-04:940.75|2025-02-04:940.75,2024-12-16,none,installments: safe capacity today 2326.54; min balance 1800.0; full amount safe from 2024-12-16.
-request_275,15884000.0,affordable_now,full_payment,2025-05-06:15884000.0,2025-05-06,none,full_payment: safe capacity today 15884000.0; min balance 12760100.0; full amount safe from 2025-05-06.
+request_26,15656000,affordable_now,full_payment,2025-08-03:15656000,2025-08-03,none,"Pay IDR 15,656,000 today. This leaves at least IDR 24,768,300 available over the next 90 days."
+request_27,6670,affordable_now,full_payment,2026-07-05:6670,2026-07-05,none,"Pay ZAR 6,670 today. This leaves at least ZAR 20,500 available over the next 90 days."
+request_28,355.58,affordable_later,wait,2024-07-14:1302.4,2024-07-14,none,"Wait until 14 July 2024, then pay EUR 1,302.4 in full. Paying sooner would put the EUR 1,100 minimum at risk."
+request_29,51524,affordable_now,full_payment,2025-11-04:51524,2025-11-04,none,"Pay ZAR 51,524 today. This leaves at least ZAR 28,300 available over the next 90 days."
+request_30,775.2,affordable_with_plan,installments,2026-04-06:268.74|2026-05-06:268.74|2026-06-05:268.74,2026-04-06,none,"Use 3 installments of USD 268.74, starting 6 April 2026. This leaves at least USD 900 available."
+request_31,4587244.35,affordable_later,wait,2024-09-14:18164000,2024-09-14,none,"Wait until 14 September 2024, then pay IDR 18,164,000 in full. Paying sooner would put the IDR 16,588,900 minimum at risk."
+request_32,20553.26,affordable_later,wait,2025-02-15:40018,2025-02-15,none,"Wait until 15 February 2025, then pay ZAR 40,018 in full. Paying sooner would put the ZAR 35,700 minimum at risk."
+request_33,51617.81,affordable_later,wait,2026-02-13:118000,2026-02-13,none,"Wait until 13 February 2026, then pay INR 118,000 in full. Paying sooner would put the INR 102,100 minimum at risk."
+request_34,129400,affordable_now,full_payment,2024-12-04:129400,2024-12-04,none,"Pay INR 129,400 today. This leaves at least INR 138,500 available over the next 90 days."
+request_35,25688.72,affordable_later,wait,2026-01-16:212000,2026-01-16,none,"Wait until 16 January 2026, then pay INR 212,000 in full. Paying sooner would put the INR 106,400 minimum at risk."
+request_36,441.56,not_affordable,not_recommended,none,,none,"Safe capacity today is USD 441.56 of USD 3,954; full payment is not safe within the next 90 days."
+request_37,6805872.9,affordable_later,wait,2024-04-17:14649000,2024-04-17,none,"Wait until 17 April 2024, then pay IDR 14,649,000 in full. Paying sooner would put the IDR 17,056,200 minimum at risk."
+request_38,264.7,affordable_later,wait,2025-09-13:971.3,2025-09-13,none,"Wait until 13 September 2025, then pay EUR 971.3 in full. Paying sooner would put the EUR 400 minimum at risk."
+request_39,162426.27,affordable_later,wait,2026-04-14:208600,2026-04-14,none,"Wait until 14 April 2026, then pay INR 208,600 in full. Paying sooner would put the INR 213,400 minimum at risk."
+request_40,410.81,affordable_later,wait,2024-07-14:1290.3,2024-07-14,none,"Wait until 14 July 2024, then pay EUR 1,290.3 in full. Paying sooner would put the EUR 1,500 minimum at risk."
+request_41,10668198.31,affordable_later,wait,2025-11-14:38760000,2025-11-14,none,"Wait until 14 November 2025, then pay IDR 38,760,000 in full. Paying sooner would put the IDR 25,366,600 minimum at risk."
+request_42,52100,affordable_now,full_payment,2026-01-05:52100,2026-01-05,none,"Pay INR 52,100 today. This leaves at least INR 113,100 available over the next 90 days."
+request_43,9830228.11,affordable_later,wait,2024-11-12:43339000,2024-11-12,none,"Wait until 12 November 2024, then pay IDR 43,339,000 in full. Paying sooner would put the IDR 21,398,000 minimum at risk."
+request_44,35499.5,affordable_later,wait,2025-04-18:95800,2025-04-18,none,"Wait until 18 April 2025, then pay INR 95,800 in full. Paying sooner would put the INR 82,900 minimum at risk."
+request_45,4039676.49,not_affordable,not_recommended,none,,none,"Safe capacity today is IDR 4,039,676.49 of IDR 21,983,000; full payment is not safe within the next 90 days."
+request_46,37417.85,affordable_with_plan,installments,2024-12-03:25714|2024-12-31:25714,2024-12-15,none,"Use 2 installments of INR 25,714, starting 3 December 2024. This leaves at least INR 84,000 available."
+request_47,6480443.91,not_affordable,not_recommended,none,,none,"Safe capacity today is IDR 6,480,443.91 of IDR 38,114,000; full payment is not safe within the next 90 days."
+request_48,45700,affordable_now,full_payment,2026-07-25:45700,2026-07-25,none,"Pay INR 45,700 today. This leaves at least INR 71,300 available over the next 90 days."
+request_49,11714464.42,affordable_with_plan,installments,2024-03-18:11902106.67|2024-04-18:11902106.67|2024-05-19:11902106.67,2024-04-17,none,"Use 3 installments of IDR 11,902,106.67, starting 18 March 2024. This leaves at least IDR 20,275,700 available."
+request_50,43900,affordable_now,full_payment,2025-08-06:43900,2025-08-06,none,"Pay INR 43,900 today. This leaves at least INR 99,700 available over the next 90 days."
+request_51,2191000,affordable_now,full_payment,2026-01-03:2191000,2026-01-03,none,"Pay IDR 2,191,000 today. This leaves at least IDR 7,811,000 available over the next 90 days."
+request_52,23586.86,affordable_later,wait,2024-06-14:28870,2024-06-14,none,"Wait until 14 June 2024, then pay INR 28,870 in full. Paying sooner would put the INR 41,500 minimum at risk."
+request_53,714.42,affordable_with_plan,installments,2025-11-21:589.06|2025-12-19:589.06|2026-01-16:589.06,2025-12-14,none,"Use 3 installments of USD 589.06, starting 21 November 2025. This leaves at least USD 2,100 available."
+request_54,4640.54,not_affordable,not_recommended,none,,none,"Safe capacity today is ZAR 4,640.54 of ZAR 121,528; full payment is not safe within the next 90 days."
+request_55,134268.75,affordable_with_plan,installments,2026-06-11:75781.33|2026-07-12:75781.33|2026-08-12:75781.33,2026-07-14,none,"Use 3 installments of INR 75,781.33, starting 11 June 2026. This leaves at least INR 124,300 available."
+request_56,683.52,affordable_with_plan,installments,2025-02-03:458.42|2025-03-03:458.42,2025-02-14,none,"Use 2 installments of USD 458.42, starting 3 February 2025. This leaves at least USD 2,100 available."
+request_57,8568.47,not_affordable,not_recommended,none,,none,"Safe capacity today is ZAR 8,568.47 of ZAR 61,446; full payment is not safe within the next 90 days."
+request_58,16226000,affordable_now,full_payment,2024-12-07:16226000,2024-12-07,none,"Pay IDR 16,226,000 today. This leaves at least IDR 14,433,900 available over the next 90 days."
+request_59,140600,affordable_with_plan,installments,2025-05-07:48741.33|2025-06-04:48741.33|2025-07-02:48741.33,2025-05-04,none,"Use 3 installments of INR 48,741.33, starting 7 May 2025. This leaves at least INR 132,600 available."
+request_60,172.1,affordable_later,wait,2026-01-14:199.89,2026-01-14,none,"Wait until 14 January 2026, then pay USD 199.89 in full. Paying sooner would put the USD 400 minimum at risk."
+request_61,29062,affordable_with_plan,installments,2024-03-17:10074.83|2024-04-17:10074.83|2024-05-18:10074.83,2024-03-03,none,"Use 3 installments of ZAR 10,074.83, starting 17 March 2024. This leaves at least ZAR 36,700 available."
+request_62,404.23,affordable_now,full_payment,2025-08-05:404.23,2025-08-05,none,"Pay USD 404.23 today. This leaves at least USD 1,300 available over the next 90 days."
+request_63,48396.59,affordable_with_plan,partial_payment,2026-07-07:48396.59|2026-08-14:295503.41,2026-08-14,none,"Pay INR 48,396.59 today and INR 295,503.41 on 14 August 2026. This leaves at least INR 153,500 available."
+request_64,0,not_affordable,not_recommended,none,,none,"Safe capacity today is INR 0 of INR 63,700; full payment is not safe within the next 90 days."
+request_65,7079.88,not_affordable,not_recommended,none,,none,"Safe capacity today is ZAR 7,079.88 of ZAR 54,340; full payment is not safe within the next 90 days."
+request_66,22200,affordable_now,full_payment,2026-04-03:22200,2026-04-03,none,"Pay INR 22,200 today. This leaves at least INR 80,700 available over the next 90 days."
+request_67,452.05,affordable_later,wait,2024-09-14:2094,2024-09-14,none,"Wait until 14 September 2024, then pay USD 2,094 in full. Paying sooner would put the USD 1,200 minimum at risk."
+request_68,1196.56,affordable_later,not_recommended,none,2025-04-29,none,"Safe capacity today is USD 1,196.56 of USD 2,091.6; full payment becomes safe on 2025-04-29, but no accepted payment method fits safely."
+request_69,529.1,affordable_now,full_payment,2026-01-04:529.1,2026-01-04,none,Pay EUR 529.1 today. This leaves at least EUR 700 available over the next 90 days.
+request_70,60782.72,affordable_later,wait,2025-02-16:243900,2025-02-16,none,"Wait until 16 February 2025, then pay INR 243,900 in full. Paying sooner would put the INR 115,000 minimum at risk."
+request_71,819076.46,not_affordable,not_recommended,none,,none,"Safe capacity today is IDR 819,076.46 of IDR 21,451,000; full payment is not safe within the next 90 days."
+request_72,11330,affordable_now,full_payment,2026-07-05:11330,2026-07-05,none,"Pay ZAR 11,330 today. This leaves at least ZAR 12,200 available over the next 90 days."
+request_73,71400,affordable_now,full_payment,2023-01-20:71400,2023-01-20,none,"Pay INR 71,400 today. This leaves at least INR 103,200 available over the next 90 days."
+request_74,5010,affordable_now,full_payment,2025-08-04:5010,2025-08-04,none,"Pay ZAR 5,010 today. This leaves at least ZAR 21,900 available over the next 90 days."
+request_75,28270,affordable_with_plan,installments,2026-04-09:9800.27|2026-05-09:9800.27|2026-06-08:9800.27,2026-04-06,none,"Use 3 installments of ZAR 9,800.27, starting 9 April 2026. This leaves at least ZAR 39,000 available."
+request_76,895.59,not_affordable,not_recommended,none,,none,"Safe capacity today is USD 895.59 of USD 4,455.6; full payment is not safe within the next 90 days."
+request_77,60094.23,affordable_later,wait,2025-11-14:60700,2025-11-14,none,"Wait until 14 November 2025, then pay INR 60,700 in full. Paying sooner would put the INR 82,200 minimum at risk."
+request_78,50200,affordable_now,full_payment,2025-10-02:50200,2025-10-02,none,"Pay INR 50,200 today. This leaves at least INR 55,200 available over the next 90 days."
+request_79,868.84,affordable_later,not_recommended,none,2024-09-14,none,"Safe capacity today is EUR 868.84 of EUR 2,151.6; full payment becomes safe on 2024-09-14, but no accepted payment method fits safely."
+request_80,125410,affordable_later,not_recommended,none,2025-03-16,none,"Safe capacity today is INR 125,410 of INR 217,500; full payment becomes safe on 2025-03-16, but no accepted payment method fits safely."
+request_81,2076,affordable_now,full_payment,2026-07-03:2076,2026-07-03,none,"Pay USD 2,076 today. This leaves at least USD 1,600 available over the next 90 days."
+request_82,422.63,affordable_later,wait,2025-01-16:1405.2,2025-01-16,none,"Wait until 16 January 2025, then pay USD 1,405.2 in full. Paying sooner would put the USD 1,100 minimum at risk."
+request_83,1494.16,not_affordable,not_recommended,none,,none,"Safe capacity today is INR 1,494.16 of INR 156,200; full payment is not safe within the next 90 days."
+request_84,33692.81,affordable_later,wait,2026-05-14:95400,2026-05-14,none,"Wait until 14 May 2026, then pay INR 95,400 in full. Paying sooner would put the INR 91,300 minimum at risk."
+request_85,448265.95,not_affordable,not_recommended,none,,none,"Safe capacity today is IDR 448,265.95 of IDR 19,304,000; full payment is not safe within the next 90 days."
+request_86,46300,affordable_now,full_payment,2025-08-03:46300,2025-08-03,none,"Pay INR 46,300 today. This leaves at least INR 84,900 available over the next 90 days."
+request_87,17999.09,not_affordable,not_recommended,none,,none,"Safe capacity today is INR 17,999.09 of INR 487,900; full payment is not safe within the next 90 days."
+request_88,11959.79,affordable_with_plan,installments,2024-06-14:9045.23|2024-07-15:9045.23|2024-08-15:9045.23,2024-07-14,none,"Use 3 installments of ZAR 9,045.23, starting 14 June 2024. This leaves at least ZAR 25,800 available."
+request_89,10238397.21,affordable_with_plan,installments,2025-11-18:4768746.67|2025-12-16:4768746.67|2026-01-13:4768746.67,2025-11-14,none,"Use 3 installments of IDR 4,768,746.67, starting 18 November 2025. This leaves at least IDR 12,534,700 available."
+request_90,2560,affordable_now,full_payment,2026-07-06:2560,2026-07-06,none,"Pay ZAR 2,560 today. This leaves at least ZAR 7,600 available over the next 90 days."
+request_91,641.79,affordable_later,wait,2024-10-14:1927.2,2024-10-14,none,"Wait until 14 October 2024, then pay EUR 1,927.2 in full. Paying sooner would put the EUR 2,100 minimum at risk."
+request_92,34034,affordable_now,full_payment,2025-02-05:34034,2025-02-05,none,"Pay ZAR 34,034 today. This leaves at least ZAR 28,100 available over the next 90 days."
+request_93,1729.2,affordable_now,full_payment,2026-04-07:1729.2,2026-04-07,none,"Pay USD 1,729.2 today. This leaves at least USD 1,900 available over the next 90 days."
+request_94,572,affordable_now,full_payment,2024-12-04:572,2024-12-04,none,Pay EUR 572 today. This leaves at least EUR 600 available over the next 90 days.
+request_95,0,not_affordable,not_recommended,none,,none,"Safe capacity today is INR 0 of INR 553,000; full payment is not safe within the next 90 days."
+request_96,80365.42,affordable_with_plan,installments,2026-01-10:31269.33|2026-02-09:31269.33|2026-03-11:31269.33,2026-01-14,none,"Use 3 installments of INR 31,269.33, starting 10 January 2026. This leaves at least INR 56,500 available."
+request_97,3037.52,affordable_with_plan,installments,2024-03-19:8145.28|2024-04-19:8145.28|2024-05-20:8145.28,2024-03-15,none,"Use 3 installments of ZAR 8,145.28, starting 19 March 2024. This leaves at least ZAR 29,700 available."
+request_98,9090.16,affordable_later,wait,2025-10-13:27148,2025-10-13,none,"Wait until 13 October 2025, then pay ZAR 27,148 in full. Paying sooner would put the ZAR 30,000 minimum at risk."
+request_99,18062,affordable_now,full_payment,2026-07-04:18062,2026-07-04,none,"Pay ZAR 18,062 today. This leaves at least ZAR 49,100 available over the next 90 days."
+request_100,29575.83,affordable_with_plan,installments,2024-06-13:12866.19|2024-07-14:12866.19|2024-08-14:12866.19,2024-06-14,none,"Use 3 installments of ZAR 12,866.19, starting 13 June 2024. This leaves at least ZAR 32,500 available."
+request_101,143500,affordable_now,full_payment,2025-11-03:143500,2025-11-03,none,"Pay INR 143,500 today. This leaves at least INR 187,400 available over the next 90 days."
+request_102,1716,affordable_with_plan,installments,2026-04-05:594.88|2026-05-05:594.88|2026-06-04:594.88,2026-04-05,none,"Use 3 installments of EUR 594.88, starting 5 April 2026. This leaves at least EUR 900 available."
+request_103,12633.55,not_affordable,not_recommended,none,,none,"Safe capacity today is INR 12,633.55 of INR 368,300; full payment is not safe within the next 90 days."
+request_104,17204,affordable_now,full_payment,2025-02-04:17204,2025-02-04,none,"Pay ZAR 17,204 today. This leaves at least ZAR 24,700 available over the next 90 days."
+request_105,44740.12,affordable_later,wait,2026-06-14:53500,2026-06-14,none,"Wait until 14 June 2026, then pay INR 53,500 in full. Paying sooner would put the INR 73,900 minimum at risk."
+request_106,307.74,affordable_later,wait,2025-02-16:2207.7,2025-02-16,none,"Wait until 16 February 2025, then pay EUR 2,207.7 in full. Paying sooner would put the EUR 1,200 minimum at risk."
+request_107,0,not_affordable,not_recommended,none,,none,"Safe capacity today is EUR 0 of EUR 2,534.4; full payment is not safe within the next 90 days."
+request_108,3419.98,not_affordable,not_recommended,none,,none,"Safe capacity today is ZAR 3,419.98 of ZAR 55,308; full payment is not safe within the next 90 days."
+request_109,818.85,affordable_with_plan,installments,2024-03-18:645.98|2024-04-18:645.98|2024-05-19:645.98,2024-03-15,none,"Use 3 installments of EUR 645.98, starting 18 March 2024. This leaves at least EUR 1,700 available."
+request_110,22352,affordable_with_plan,installments,2025-08-06:7748.69|2025-09-03:7748.69|2025-10-01:7748.69,2025-08-06,none,"Use 3 installments of ZAR 7,748.69, starting 6 August 2025. This leaves at least ZAR 11,200 available."
+request_111,16625000,affordable_now,full_payment,2026-04-03:16625000,2026-04-03,none,"Pay IDR 16,625,000 today. This leaves at least IDR 23,022,800 available over the next 90 days."
+request_112,271.7,affordable_now,full_payment,2024-06-05:271.7,2024-06-05,none,Pay EUR 271.7 today. This leaves at least EUR 500 available over the next 90 days.
+request_113,25059.07,affordable_later,wait,2026-09-14:36500,2026-09-14,none,"Wait until 14 September 2026, then pay INR 36,500 in full. Paying sooner would put the INR 82,300 minimum at risk."
+request_114,65300,affordable_now,full_payment,2026-01-04:65300,2026-01-04,none,"Pay INR 65,300 today. This leaves at least INR 113,400 available over the next 90 days."
+request_115,16712.71,affordable_later,wait,2024-11-13:80500,2024-11-13,none,"Wait until 13 November 2024, then pay INR 80,500 in full. Paying sooner would put the INR 38,800 minimum at risk."
+request_116,21051.92,affordable_later,not_recommended,none,2025-04-15,none,"Safe capacity today is INR 21,051.92 of INR 241,200; full payment becomes safe on 2025-04-15, but no accepted payment method fits safely."
+request_117,857.19,affordable_later,wait,2026-07-15:880,2026-07-15,none,"Wait until 15 July 2026, then pay EUR 880 in full. Paying sooner would put the EUR 1,000 minimum at risk."
+request_118,617.31,affordable_later,not_recommended,none,2025-02-16,none,"Safe capacity today is EUR 617.31 of EUR 738.1; full payment becomes safe on 2025-02-16, but no accepted payment method fits safely."
+request_119,52639.34,affordable_later,not_recommended,none,2025-07-20,none,"Safe capacity today is INR 52,639.34 of INR 203,500; full payment becomes safe on 2025-07-20, but no accepted payment method fits safely."
+request_120,7714000,affordable_now,full_payment,2026-04-06:7714000,2026-04-06,none,"Pay IDR 7,714,000 today. This leaves at least IDR 20,050,300 available over the next 90 days."
+request_121,633.6,affordable_now,full_payment,2024-03-03:633.6,2024-03-03,none,Pay USD 633.6 today. This leaves at least USD 800 available over the next 90 days.
+request_122,20558000,affordable_with_plan,installments,2025-08-05:7126773.33|2025-09-02:7126773.33|2025-09-30:7126773.33,2025-08-05,none,"Use 3 installments of IDR 7,126,773.33, starting 5 August 2025. This leaves at least IDR 12,588,500 available."
+request_123,4076000,affordable_now,full_payment,2026-01-07:4076000,2026-01-07,none,"Pay IDR 4,076,000 today. This leaves at least IDR 18,091,200 available over the next 90 days."
+request_124,1492.43,affordable_with_plan,installments,2024-06-11:1076.12|2024-07-12:1076.12|2024-08-12:1076.12,2024-06-14,none,"Use 3 installments of EUR 1,076.12, starting 11 June 2024. This leaves at least EUR 1,600 available."
+request_125,6468,affordable_now,full_payment,2025-11-06:6468,2025-11-06,none,"Pay ZAR 6,468 today. This leaves at least ZAR 11,300 available over the next 90 days."
+request_126,159600,affordable_now,full_payment,2026-07-03:159600,2026-07-03,none,"Pay INR 159,600 today. This leaves at least INR 129,700 available over the next 90 days."
+request_127,17266.2,affordable_later,wait,2024-09-12:23980,2024-09-12,none,"Wait until 12 September 2024, then pay ZAR 23,980 in full. Paying sooner would put the ZAR 41,000 minimum at risk."
+request_128,25168,affordable_now,full_payment,2025-02-07:25168,2025-02-07,none,"Pay ZAR 25,168 today. This leaves at least ZAR 42,600 available over the next 90 days."
+request_129,61.84,not_affordable,not_recommended,none,,none,"Safe capacity today is USD 61.84 of USD 2,668.8; full payment is not safe within the next 90 days."
+request_130,454.44,affordable_later,wait,2025-01-16:1978.8,2025-01-16,none,"Wait until 16 January 2025, then pay USD 1,978.8 in full. Paying sooner would put the USD 1,400 minimum at risk."
+request_131,0,not_affordable,not_recommended,none,,none,"Safe capacity today is USD 0 of USD 1,855.2; full payment is not safe within the next 90 days."
+request_132,379.86,affordable_now,full_payment,2026-01-05:379.86,2026-01-05,none,"Pay USD 379.86 today. This leaves at least USD 1,100 available over the next 90 days."
+request_133,15770000,affordable_later,not_recommended,none,2024-03-07,none,"Safe capacity today is IDR 15,770,000 of IDR 15,770,000; full payment becomes safe on 2024-03-07, but no accepted payment method fits safely."
+request_134,7369219.37,affordable_later,wait,2025-08-14:21831000,2025-08-14,none,"Wait until 14 August 2025, then pay IDR 21,831,000 in full. Paying sooner would put the IDR 15,902,500 minimum at risk."
+request_135,289.14,affordable_later,wait,2026-07-15:304.8,2026-07-15,none,"Wait until 15 July 2026, then pay USD 304.8 in full. Paying sooner would put the USD 500 minimum at risk."
+request_136,560.4,affordable_now,full_payment,2024-06-03:560.4,2024-06-03,none,"Pay USD 560.4 today. This leaves at least USD 1,100 available over the next 90 days."
+request_137,37050.7,affordable_later,wait,2025-12-14:80100,2025-12-14,none,"Wait until 14 December 2025, then pay INR 80,100 in full. Paying sooner would put the INR 71,800 minimum at risk."
+request_138,790.76,affordable_with_plan,installments,2026-04-07:435.74|2026-05-05:435.74|2026-06-02:435.74,2026-04-14,none,"Use 3 installments of EUR 435.74, starting 7 April 2026. This leaves at least EUR 2,300 available."
+request_139,1616.11,affordable_with_plan,installments,2024-09-07:802.88|2024-10-08:802.88|2024-11-08:802.88,2024-09-14,none,"Use 3 installments of USD 802.88, starting 7 September 2024. This leaves at least USD 1,500 available."
+request_140,2515.56,not_affordable,not_recommended,none,,none,"Safe capacity today is ZAR 2,515.56 of ZAR 62,832; full payment is not safe within the next 90 days."
+request_141,21464.07,not_affordable,not_recommended,none,,none,"Safe capacity today is INR 21,464.07 of INR 171,600; full payment is not safe within the next 90 days."
+request_142,1263.6,affordable_now,full_payment,2024-12-05:1263.6,2024-12-05,none,"Pay USD 1,263.6 today. This leaves at least USD 1,700 available over the next 90 days."
+request_143,2335.29,affordable_later,wait,2025-07-14:12584,2025-07-14,none,"Wait until 14 July 2025, then pay ZAR 12,584 in full. Paying sooner would put the ZAR 11,300 minimum at risk."
+request_144,233.34,affordable_now,full_payment,2026-07-04:233.34,2026-07-04,none,Pay USD 233.34 today. This leaves at least USD 600 available over the next 90 days.
+request_145,50114.31,affordable_with_plan,installments,2024-03-20:75365.33|2024-04-20:75365.33|2024-05-21:75365.33,2024-04-17,none,"Use 3 installments of INR 75,365.33, starting 20 March 2024. This leaves at least INR 155,400 available."
+request_146,0,not_affordable,not_recommended,none,,none,"Safe capacity today is INR 0 of INR 449,400; full payment is not safe within the next 90 days."
+request_147,387.76,affordable_later,not_recommended,none,2026-05-14,none,"Safe capacity today is EUR 387.76 of EUR 1,129.7; full payment becomes safe on 2026-05-14, but no accepted payment method fits safely."
+request_148,10440.53,affordable_with_plan,installments,2024-06-14:7710.56|2024-07-15:7710.56|2024-08-15:7710.56,2024-06-14,none,"Use 3 installments of ZAR 7,710.56, starting 14 June 2024. This leaves at least ZAR 20,000 available."
+request_149,22729.58,affordable_with_plan,installments,2025-11-18:12706.03|2025-12-16:12706.03|2026-01-13:12706.03,2025-11-14,none,"Use 3 installments of ZAR 12,706.03, starting 18 November 2025. This leaves at least ZAR 42,100 available."
+request_150,326.56,affordable_with_plan,installments,2026-01-06:171.98|2026-02-05:171.98|2026-03-07:171.98,2026-02-13,none,"Use 3 installments of EUR 171.98, starting 6 January 2026. This leaves at least EUR 700 available."
+request_151,26999000,affordable_now,full_payment,2024-09-03:26999000,2024-09-03,none,"Pay IDR 26,999,000 today. This leaves at least IDR 31,633,600 available over the next 90 days."
+request_152,12388.99,affordable_with_plan,installments,2025-02-12:4812.43|2025-03-12:4812.43|2025-04-09:4812.43,2025-02-14,none,"Use 3 installments of ZAR 4,812.43, starting 12 February 2025. This leaves at least ZAR 11,900 available."
+request_153,271.63,not_affordable,not_recommended,none,,none,"Safe capacity today is USD 271.63 of USD 2,830.8; full payment is not safe within the next 90 days."
+request_154,1625.8,affordable_with_plan,installments,2024-12-04:563.61|2025-01-04:563.61|2025-02-04:563.61,2024-12-04,none,"Use 3 installments of EUR 563.61, starting 4 December 2024. This leaves at least EUR 1,300 available."
+request_155,112500,affordable_now,full_payment,2025-05-06:112500,2025-05-06,none,"Pay INR 112,500 today. This leaves at least INR 56,300 available over the next 90 days."
+request_156,8422.92,affordable_later,wait,2026-06-13:43076,2026-06-13,none,"Wait until 13 June 2026, then pay ZAR 43,076 in full. Paying sooner would put the ZAR 26,900 minimum at risk."
+request_157,5956686.96,affordable_later,wait,2024-04-17:23503000,2024-04-17,none,"Wait until 17 April 2024, then pay IDR 23,503,000 in full. Paying sooner would put the IDR 15,714,100 minimum at risk."
+request_158,242600,affordable_with_plan,installments,2025-08-07:84101.33|2025-09-04:84101.33|2025-10-02:84101.33,2025-08-07,none,"Use 3 installments of INR 84,101.33, starting 7 August 2025. This leaves at least INR 131,400 available."
+request_159,6616.97,not_affordable,not_recommended,none,,none,"Safe capacity today is ZAR 6,616.97 of ZAR 13,398; full payment is not safe within the next 90 days."
+request_160,482.23,affordable_with_plan,installments,2024-06-13:432.05|2024-07-14:432.05|2024-08-14:432.05,2024-07-14,none,"Use 3 installments of EUR 432.05, starting 13 June 2024. This leaves at least EUR 1,200 available."
+request_161,0,not_affordable,not_recommended,none,,none,"Safe capacity today is IDR 0 of IDR 21,204,000; full payment is not safe within the next 90 days."
+request_162,1312226.28,not_affordable,not_recommended,none,,none,"Safe capacity today is IDR 1,312,226.28 of IDR 83,923,000; full payment is not safe within the next 90 days."
+request_163,9938612.7,affordable_later,not_recommended,none,2024-11-13,none,"Safe capacity today is IDR 9,938,612.7 of IDR 19,304,000; full payment becomes safe on 2024-11-13, but no accepted payment method fits safely."
+request_164,27018000,affordable_with_plan,installments,2025-02-11:9366240|2025-03-11:9366240|2025-04-08:9366240,2025-02-04,none,"Use 3 installments of IDR 9,366,240, starting 11 February 2025. This leaves at least IDR 29,550,500 available."
+request_165,80600,affordable_now,full_payment,2026-04-06:80600,2026-04-06,none,"Pay INR 80,600 today. This leaves at least INR 95,000 available over the next 90 days."
+request_166,2907.6,affordable_with_plan,installments,2024-12-03:1007.97|2025-01-03:1007.97|2025-02-03:1007.97,2024-12-03,none,"Use 3 installments of USD 1,007.97, starting 3 December 2024. This leaves at least USD 1,700 available."
+request_167,0,not_affordable,not_recommended,none,,none,"Safe capacity today is ZAR 0 of ZAR 43,802; full payment is not safe within the next 90 days."
+request_168,43422.14,affordable_with_plan,partial_payment,2026-01-07:43422.14|2026-01-14:5957.86,2026-01-14,none,"Pay INR 43,422.14 today and INR 5,957.86 on 14 January 2026. This leaves at least INR 114,400 available."
+request_169,41976,affordable_now,full_payment,2024-03-04:41976,2024-03-04,none,"Pay ZAR 41,976 today. This leaves at least ZAR 18,700 available over the next 90 days."
+request_170,34482982.15,affordable_with_plan,installments,2025-08-06:12804480|2025-09-03:12804480|2025-10-01:12804480,2025-08-14,none,"Use 3 installments of IDR 12,804,480, starting 6 August 2025. This leaves at least IDR 24,715,800 available."
+request_171,0,not_affordable,not_recommended,none,,none,"Safe capacity today is EUR 0 of EUR 1,878.8; full payment is not safe within the next 90 days."
+request_172,10161.31,affordable_with_plan,installments,2024-06-05:5304|2024-07-03:5304,2024-06-14,none,"Use 2 installments of ZAR 5,304, starting 5 June 2024. This leaves at least ZAR 27,200 available."
+request_173,74438.18,affordable_with_plan,installments,2025-11-21:39173.33|2025-12-19:39173.33|2026-01-16:39173.33,2025-11-14,none,"Use 3 installments of INR 39,173.33, starting 21 November 2025. This leaves at least INR 79,100 available."
+request_174,1146.2,affordable_with_plan,installments,2026-04-04:397.35|2026-05-04:397.35|2026-06-03:397.35,2026-04-04,none,"Use 3 installments of EUR 397.35, starting 4 April 2026. This leaves at least EUR 700 available."
+request_175,2346.3,affordable_now,full_payment,2024-09-06:2346.3,2024-09-06,none,"Pay EUR 2,346.3 today. This leaves at least EUR 1,700 available over the next 90 days."
+request_176,467.05,affordable_later,wait,2025-04-25:1239.7,2025-04-25,none,"Wait until 25 April 2025, then pay EUR 1,239.7 in full. Paying sooner would put the EUR 600 minimum at risk."
+request_177,1017.6,affordable_now,full_payment,2026-01-05:1017.6,2026-01-05,none,"Pay USD 1,017.6 today. This leaves at least USD 1,300 available over the next 90 days."
+request_178,2938.1,affordable_with_plan,installments,2024-12-07:1018.54|2025-01-07:1018.54|2025-02-07:1018.54,2024-12-07,none,"Use 3 installments of EUR 1,018.54, starting 7 December 2024. This leaves at least EUR 1,400 available."
+request_179,7165053.44,affordable_later,wait,2025-07-14:41648000,2025-07-14,none,"Wait until 14 July 2025, then pay IDR 41,648,000 in full. Paying sooner would put the IDR 41,430,800 minimum at risk."
+request_180,66500,affordable_now,full_payment,2026-07-06:66500,2026-07-06,none,"Pay INR 66,500 today. This leaves at least INR 37,300 available over the next 90 days."
+request_181,364.88,not_affordable,not_recommended,none,,none,"Safe capacity today is USD 364.88 of USD 5,059.2; full payment is not safe within the next 90 days."
+request_182,65714,affordable_now,full_payment,2025-08-05:65714,2025-08-05,none,"Pay ZAR 65,714 today. This leaves at least ZAR 31,100 available over the next 90 days."
+request_183,20913178.09,not_affordable,not_recommended,none,,none,"Safe capacity today is IDR 20,913,178.09 of IDR 26,866,000; full payment is not safe within the next 90 days."
+request_184,11996.97,not_affordable,not_recommended,none,,none,"Safe capacity today is INR 11,996.97 of INR 251,900; full payment is not safe within the next 90 days."
+request_185,526.39,affordable_later,wait,2025-12-14:1257.3,2025-12-14,none,"Wait until 14 December 2025, then pay EUR 1,257.3 in full. Paying sooner would put the EUR 1,300 minimum at risk."
+request_186,12808.19,affordable_later,wait,2026-03-15:26554,2026-03-15,none,"Wait until 15 March 2026, then pay ZAR 26,554 in full. Paying sooner would put the ZAR 22,000 minimum at risk."
+request_187,37577.48,affordable_later,wait,2024-11-12:187500,2024-11-12,none,"Wait until 12 November 2024, then pay INR 187,500 in full. Paying sooner would put the INR 128,300 minimum at risk."
+request_188,88.58,not_affordable,not_recommended,none,,none,"Safe capacity today is EUR 88.58 of EUR 2,464; full payment is not safe within the next 90 days."
+request_189,488.4,affordable_now,full_payment,2026-07-04:488.4,2026-07-04,none,Pay EUR 488.4 today. This leaves at least EUR 400 available over the next 90 days.
+request_190,732.87,affordable_later,wait,2024-12-15:2557.5,2024-12-15,none,"Wait until 15 December 2024, then pay EUR 2,557.5 in full. Paying sooner would put the EUR 1,600 minimum at risk."
+request_191,664.4,affordable_now,full_payment,2025-05-03:664.4,2025-05-03,none,Pay EUR 664.4 today. This leaves at least EUR 500 available over the next 90 days.
+request_192,298.81,affordable_later,wait,2026-05-14:2046,2026-05-14,none,"Wait until 14 May 2026, then pay USD 2,046 in full. Paying sooner would put the USD 1,000 minimum at risk."
+request_193,30.52,affordable_with_plan,installments,2024-03-21:420.23|2024-04-21:420.23|2024-05-22:420.23,2024-04-17,none,"Use 3 installments of EUR 420.23, starting 21 March 2024. This leaves at least EUR 1,000 available."
+request_194,39451.79,affordable_later,wait,2025-10-27:132800,2025-10-27,none,"Wait until 27 October 2025, then pay INR 132,800 in full. Paying sooner would put the INR 113,600 minimum at risk."
+request_195,1038.44,affordable_with_plan,installments,2026-01-09:405.74|2026-02-08:405.74|2026-03-10:405.74,2026-01-14,none,"Use 3 installments of EUR 405.74, starting 9 January 2026. This leaves at least EUR 700 available."
+request_196,762.3,affordable_now,full_payment,2024-06-03:762.3,2024-06-03,none,Pay EUR 762.3 today. This leaves at least EUR 500 available over the next 90 days.
+request_197,0,not_affordable,not_recommended,none,,none,"Safe capacity today is IDR 0 of IDR 50,939,000; full payment is not safe within the next 90 days."
+request_198,185800,affordable_now,full_payment,2026-07-07:185800,2026-07-07,none,"Pay INR 185,800 today. This leaves at least INR 124,300 available over the next 90 days."
+request_199,23674000,affordable_with_plan,installments,2024-09-07:8206986.67|2024-10-08:8206986.67|2024-11-08:8206986.67,2024-09-04,none,"Use 3 installments of IDR 8,206,986.67, starting 7 September 2024. This leaves at least IDR 25,359,500 available."
+request_200,21717000,affordable_now,full_payment,2025-02-06:21717000,2025-02-06,none,"Pay IDR 21,717,000 today. This leaves at least IDR 20,114,600 available over the next 90 days."
+request_201,23997000,affordable_now,full_payment,2026-04-03:23997000,2026-04-03,none,"Pay IDR 23,997,000 today. This leaves at least IDR 17,304,500 available over the next 90 days."
+request_202,123900,affordable_now,full_payment,2024-12-05:123900,2024-12-05,none,"Pay INR 123,900 today. This leaves at least INR 147,800 available over the next 90 days."
+request_203,1442.1,affordable_with_plan,installments,2025-05-10:499.93|2025-06-07:499.93|2025-07-05:499.93,2025-05-07,none,"Use 3 installments of EUR 499.93, starting 10 May 2025. This leaves at least EUR 1,400 available."
+request_204,588.74,affordable_now,full_payment,2026-01-04:588.74,2026-01-04,none,"Pay EUR 588.74 today. This leaves at least EUR 1,300 available over the next 90 days."
+request_205,10621000,affordable_now,full_payment,2024-03-06:10621000,2024-03-06,none,"Pay IDR 10,621,000 today. This leaves at least IDR 13,994,300 available over the next 90 days."
+request_206,1404.7,affordable_with_plan,installments,2025-08-03:486.96|2025-08-31:486.96|2025-09-28:486.96,2025-08-03,none,"Use 3 installments of EUR 486.96, starting 3 August 2025. This leaves at least EUR 900 available."
+request_207,5420.03,affordable_later,wait,2026-07-15:11830,2026-07-15,none,"Wait until 15 July 2026, then pay ZAR 11,830 in full. Paying sooner would put the ZAR 13,600 minimum at risk."
+request_208,2984518.4,affordable_later,wait,2024-06-14:4413000,2024-06-14,none,"Wait until 14 June 2024, then pay IDR 4,413,000 in full. Paying sooner would put the IDR 10,470,700 minimum at risk."
+request_209,2046.7,affordable_later,not_recommended,none,2026-01-13,none,"Safe capacity today is ZAR 2,046.7 of ZAR 56,914; full payment becomes safe on 2026-01-13, but no accepted payment method fits safely."
+request_210,823.51,affordable_with_plan,installments,2026-04-06:471.48|2026-05-04:471.48|2026-06-01:471.48,2026-04-14,none,"Use 3 installments of USD 471.48, starting 6 April 2026. This leaves at least USD 2,000 available."
+request_211,205.02,affordable_later,wait,2024-09-14:1788.6,2024-09-14,none,"Wait until 14 September 2024, then pay EUR 1,788.6 in full. Paying sooner would put the EUR 1,500 minimum at risk."
+request_212,7487177.49,not_affordable,not_recommended,none,,none,"Safe capacity today is IDR 7,487,177.49 of IDR 71,934,000; full payment is not safe within the next 90 days."
+request_213,3362.4,affordable_with_plan,installments,2026-01-21:1165.63|2026-02-20:1165.63|2026-03-22:1165.63,2026-01-07,none,"Use 3 installments of USD 1,165.63, starting 21 January 2026. This leaves at least USD 2,100 available."
+request_214,69750,affordable_with_plan,installments,2024-12-04:36270|2025-01-01:36270,2024-12-04,none,"Use 2 installments of INR 36,270, starting 4 December 2024. This leaves at least INR 174,900 available."
+request_215,29986,affordable_with_plan,installments,2025-05-09:10395.15|2025-06-06:10395.15|2025-07-04:10395.15,2025-05-06,none,"Use 3 installments of ZAR 10,395.15, starting 9 May 2025. This leaves at least ZAR 15,700 available."
+request_216,547.68,not_affordable,not_recommended,none,,none,"Safe capacity today is USD 547.68 of USD 3,332.4; full payment is not safe within the next 90 days."
+request_217,19813.93,affordable_with_plan,installments,2024-03-19:12889.07|2024-04-19:12889.07|2024-05-20:12889.07,2024-03-15,none,"Use 3 installments of ZAR 12,889.07, starting 19 March 2024. This leaves at least ZAR 26,800 available."
+request_218,28127745.57,affordable_with_plan,installments,2025-08-07:21195893.33|2025-09-04:21195893.33|2025-10-02:21195893.33,2025-08-14,none,"Use 3 installments of IDR 21,195,893.33, starting 7 August 2025. This leaves at least IDR 34,477,200 available."
+request_219,1365.42,affordable_with_plan,installments,2026-04-07:580.01|2026-05-07:580.01|2026-06-06:580.01,2026-04-14,none,"Use 3 installments of EUR 580.01, starting 7 April 2026. This leaves at least EUR 1,100 available."
+request_220,213.25,affordable_later,not_recommended,none,2024-08-13,none,"Safe capacity today is EUR 213.25 of EUR 3,118.5; full payment becomes safe on 2024-08-13, but no accepted payment method fits safely."
+request_221,109800,affordable_now,full_payment,2025-11-03:109800,2025-11-03,none,"Pay INR 109,800 today. This leaves at least INR 81,500 available over the next 90 days."
+request_222,34078,affordable_now,full_payment,2026-01-05:34078,2026-01-05,none,"Pay ZAR 34,078 today. This leaves at least ZAR 27,300 available over the next 90 days."
+request_223,898.7,affordable_now,full_payment,2024-09-07:898.7,2024-09-07,none,Pay EUR 898.7 today. This leaves at least EUR 800 available over the next 90 days.
+request_224,10327000,affordable_with_plan,installments,2025-02-04:5370040|2025-03-04:5370040,2025-02-04,none,"Use 2 installments of IDR 5,370,040, starting 4 February 2025. This leaves at least IDR 22,187,600 available."
+request_225,12210856.51,affordable_with_plan,installments,2026-07-20:7647120|2026-08-19:7647120|2026-09-18:7647120,2026-07-15,none,"Use 3 installments of IDR 7,647,120, starting 20 July 2026. This leaves at least IDR 17,670,700 available."
+request_226,157000,affordable_now,full_payment,2024-12-03:157000,2024-12-03,none,"Pay INR 157,000 today. This leaves at least INR 209,400 available over the next 90 days."
+request_227,7263.23,not_affordable,not_recommended,none,,none,"Safe capacity today is INR 7,263.23 of INR 259,700; full payment is not safe within the next 90 days."
+request_228,5917644.23,not_affordable,not_recommended,none,,none,"Safe capacity today is IDR 5,917,644.23 of IDR 63,327,000; full payment is not safe within the next 90 days."
+request_229,464.23,affordable_with_plan,installments,2024-03-18:529.29|2024-04-18:529.29|2024-05-19:529.29,2024-04-17,none,"Use 3 installments of EUR 529.29, starting 18 March 2024. This leaves at least EUR 1,000 available."
+request_230,3537.6,affordable_now,full_payment,2025-08-06:3537.6,2025-08-06,none,"Pay EUR 3,537.6 today. This leaves at least EUR 2,000 available over the next 90 days."
+request_231,35706,affordable_with_plan,installments,2026-01-06:12378.08|2026-02-05:12378.08|2026-03-07:12378.08,2026-01-03,none,"Use 3 installments of ZAR 12,378.08, starting 6 January 2026. This leaves at least ZAR 24,300 available."
+request_232,1069.42,affordable_later,wait,2024-07-14:1970.1,2024-07-14,none,"Wait until 14 July 2024, then pay EUR 1,970.1 in full. Paying sooner would put the EUR 2,400 minimum at risk."
+request_233,0,not_affordable,not_recommended,none,,none,"Safe capacity today is IDR 0 of IDR 6,241,000; full payment is not safe within the next 90 days."
+request_234,195.84,affordable_later,wait,2026-09-13:1213.3,2026-09-13,none,"Wait until 13 September 2026, then pay EUR 1,213.3 in full. Paying sooner would put the EUR 700 minimum at risk."
+request_235,967.2,affordable_now,full_payment,2024-09-06:967.2,2024-09-06,none,Pay USD 967.2 today. This leaves at least USD 700 available over the next 90 days.
+request_236,6569494.7,not_affordable,not_recommended,none,,none,"Safe capacity today is IDR 6,569,494.7 of IDR 52,383,000; full payment is not safe within the next 90 days."
+request_237,23826000,affordable_now,full_payment,2026-04-05:23826000,2026-04-05,none,"Pay IDR 23,826,000 today. This leaves at least IDR 22,431,500 available over the next 90 days."
+request_238,663.6,affordable_with_plan,installments,2024-12-07:230.05|2025-01-07:230.05|2025-02-07:230.05,2024-12-07,none,"Use 3 installments of USD 230.05, starting 7 December 2024. This leaves at least USD 700 available."
+request_239,642,affordable_now,full_payment,2025-05-04:642,2025-05-04,none,Pay USD 642 today. This leaves at least USD 600 available over the next 90 days.
+request_240,20020,not_affordable,not_recommended,none,,none,"Safe capacity today is INR 20,020 of INR 101,200; full payment is not safe within the next 90 days."
+request_241,21052000,affordable_with_plan,installments,2024-03-17:7298026.67|2024-04-17:7298026.67|2024-05-18:7298026.67,2024-03-03,none,"Use 3 installments of IDR 7,298,026.67, starting 17 March 2024. This leaves at least IDR 19,252,000 available."
+request_242,0,not_affordable,not_recommended,none,,none,"Safe capacity today is EUR 0 of EUR 1,966.8; full payment is not safe within the next 90 days."
+request_243,17468,affordable_now,full_payment,2026-07-07:17468,2026-07-07,none,"Pay ZAR 17,468 today. This leaves at least ZAR 19,900 available over the next 90 days."
+request_244,49918,affordable_now,full_payment,2024-06-04:49918,2024-06-04,none,"Pay ZAR 49,918 today. This leaves at least ZAR 45,900 available over the next 90 days."
+request_245,43928.16,affordable_later,wait,2025-12-14:128500,2025-12-14,none,"Wait until 14 December 2025, then pay INR 128,500 in full. Paying sooner would put the INR 94,600 minimum at risk."
+request_246,64086,affordable_with_plan,installments,2026-04-03:22216.48|2026-05-03:22216.48|2026-06-02:22216.48,2026-04-03,none,"Use 3 installments of ZAR 22,216.48, starting 3 April 2026. This leaves at least ZAR 39,300 available."
+request_247,1059.3,affordable_now,full_payment,2024-09-05:1059.3,2024-09-05,none,"Pay EUR 1,059.3 today. This leaves at least EUR 1,300 available over the next 90 days."
+request_248,818.22,not_affordable,not_recommended,none,,none,"Safe capacity today is USD 818.22 of USD 1,965.6; full payment is not safe within the next 90 days."
+request_249,187.78,affordable_later,wait,2026-02-13:643.2,2026-02-13,none,"Wait until 13 February 2026, then pay USD 643.2 in full. Paying sooner would put the USD 600 minimum at risk."
+request_250,17705.54,not_affordable,not_recommended,none,,none,"Safe capacity today is ZAR 17,705.54 of ZAR 124,278; full payment is not safe within the next 90 days."
+request_251,1513.6,affordable_later,not_recommended,none,2025-05-03,none,"Safe capacity today is EUR 1,513.6 of EUR 1,513.6; full payment becomes safe on 2025-05-03, but no accepted payment method fits safely."
+request_252,5021325.31,affordable_later,wait,2026-08-14:28082000,2026-08-14,none,"Wait until 14 August 2026, then pay IDR 28,082,000 in full. Paying sooner would put the IDR 15,152,200 minimum at risk."
+request_253,1364.63,affordable_with_plan,installments,2024-03-21:984.6|2024-04-21:984.6|2024-05-22:984.6,2024-05-18,none,"Use 3 installments of EUR 984.6, starting 21 March 2024. This leaves at least EUR 2,300 available."
+request_254,943.93,affordable_later,wait,2025-09-13:3535.2,2025-09-13,none,"Wait until 13 September 2025, then pay USD 3,535.2 in full. Paying sooner would put the USD 2,500 minimum at risk."
+request_255,3345000,affordable_now,full_payment,2026-04-06:3345000,2026-04-06,none,"Pay IDR 3,345,000 today. This leaves at least IDR 9,813,900 available over the next 90 days."
+request_256,173026.79,affordable_with_plan,installments,2024-06-10:75816|2024-07-11:75816|2024-08-11:75816,2024-06-14,none,"Use 3 installments of INR 75,816, starting 10 June 2024. This leaves at least INR 168,600 available."
+request_257,587.2,affordable_later,wait,2025-11-14:1352.4,2025-11-14,none,"Wait until 14 November 2025, then pay USD 1,352.4 in full. Paying sooner would put the USD 1,600 minimum at risk."
+request_258,1113.6,affordable_now,full_payment,2026-01-07:1113.6,2026-01-07,none,"Pay USD 1,113.6 today. This leaves at least USD 500 available over the next 90 days."
+request_259,458.49,affordable_later,wait,2024-11-13:935,2024-11-13,none,"Wait until 13 November 2024, then pay EUR 935 in full. Paying sooner would put the EUR 600 minimum at risk."
+request_260,8678732.72,affordable_with_plan,partial_payment,2025-02-06:8678732.72|2025-03-16:43400267.28,2025-03-16,none,"Pay IDR 8,678,732.72 today and IDR 43,400,267.28 on 16 March 2025. This leaves at least IDR 20,727,700 available."
+request_261,1830.4,affordable_now,full_payment,2026-07-03:1830.4,2026-07-03,none,"Pay EUR 1,830.4 today. This leaves at least EUR 1,500 available over the next 90 days."
+request_262,9236000,affordable_now,full_payment,2024-12-05:9236000,2024-12-05,none,"Pay IDR 9,236,000 today. This leaves at least IDR 31,018,500 available over the next 90 days."
+request_263,7870.27,not_affordable,not_recommended,none,,none,"Safe capacity today is ZAR 7,870.27 of ZAR 51,546; full payment is not safe within the next 90 days."
+request_264,27327.12,affordable_later,wait,2026-05-14:111300,2026-05-14,none,"Wait until 14 May 2026, then pay INR 111,300 in full. Paying sooner would put the INR 59,500 minimum at risk."
+request_265,45970,affordable_now,full_payment,2024-03-06:45970,2024-03-06,none,"Pay INR 45,970 today. This leaves at least INR 189,700 available over the next 90 days."
+request_266,935,affordable_with_plan,installments,2025-08-03:324.13|2025-08-31:324.13|2025-09-28:324.13,2025-08-03,none,"Use 3 installments of EUR 324.13, starting 3 August 2025. This leaves at least EUR 900 available."
+request_267,884.6,not_affordable,not_recommended,none,,none,"Safe capacity today is EUR 884.6 of EUR 1,925; full payment is not safe within the next 90 days."
+request_268,1134.52,affordable_with_plan,installments,2024-06-14:841.22|2024-07-15:841.22|2024-08-15:841.22,2024-08-13,none,"Use 3 installments of EUR 841.22, starting 14 June 2024. This leaves at least EUR 1,400 available."
+request_269,0,not_affordable,not_recommended,none,,none,"Safe capacity today is ZAR 0 of ZAR 15,490; full payment is not safe within the next 90 days."
+request_270,157.62,affordable_later,not_recommended,none,2026-08-14,none,"Safe capacity today is USD 157.62 of USD 3,028.8; full payment becomes safe on 2026-08-14, but no accepted payment method fits safely."
+request_271,7359.73,not_affordable,not_recommended,none,,none,"Safe capacity today is INR 7,359.73 of INR 91,300; full payment is not safe within the next 90 days."
+request_272,6695495.87,affordable_with_plan,installments,2025-02-12:4709466.67|2025-03-12:4709466.67|2025-04-09:4709466.67,2025-03-16,none,"Use 3 installments of IDR 4,709,466.67, starting 12 February 2025. This leaves at least IDR 7,508,600 available."
+request_273,9642954.93,affordable_with_plan,installments,2026-04-07:5498480|2026-05-05:5498480|2026-06-02:5498480,2026-04-14,none,"Use 3 installments of IDR 5,498,480, starting 7 April 2026. This leaves at least IDR 18,774,600 available."
+request_274,2326.54,affordable_with_plan,installments,2024-12-04:940.75|2025-01-04:940.75|2025-02-04:940.75,2024-12-16,none,"Use 3 installments of EUR 940.75, starting 4 December 2024. This leaves at least EUR 1,800 available."
+request_275,15884000,affordable_now,full_payment,2025-05-06:15884000,2025-05-06,none,"Pay IDR 15,884,000 today. This leaves at least IDR 12,760,100 available over the next 90 days."

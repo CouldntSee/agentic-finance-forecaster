@@ -4,6 +4,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 from tqdm import tqdm
 import json, re
+import time 
 
 import numpy as np
 from datetime import timedelta
@@ -24,6 +25,7 @@ else:
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATASET_DIR = BASE_DIR / "dataset"
 OUTPUT_DIR = BASE_DIR / "code" # We will save output.csv in the code/ folder as per standard
+
 
 # --- 1. DATA LOADER LAYER ---
 def load_all_data():
@@ -49,10 +51,12 @@ def load_all_data():
 
 # --- 2. MULTIMODAL LAYER (VISION) ---
 CACHE_PATH = BASE_DIR / 'code' / 'image_cache.json'
-USAGE = {"model": "gemini-2.0-flash", "calls": 0, "input_tokens": 0, "output_tokens": 0}
+USAGE = {"model": os.getenv("GEMINI_MODEL", "gemini-3.6-flash"),
+         "calls": 0, "input_tokens": 0, "output_tokens": 0}
 
 def extract_amount_from_image(image_id):
-    """Uses Gemini Vision to extract missing amounts from receipts (cached)."""
+    """Uses Gemini Vision to extract missing amounts from receipts (cached & rate-limited)."""
+
     if not image_id or client is None:
         return None, None
     cache = json.loads(CACHE_PATH.read_text()) if CACHE_PATH.exists() else {}
@@ -62,15 +66,28 @@ def extract_amount_from_image(image_id):
     if not path.exists():
         return None, None
     from google.genai import types
-    resp = client.models.generate_content(
-        model=USAGE["model"],
-        contents=[types.Part.from_bytes(data=path.read_bytes(), mime_type='image/png'),
-                  'Extract the primary transaction amount and 3-letter currency code from this '
-                  'document. Reply JSON only: {"currency": "XXX", "amount": 0.00}'],
-        config=types.GenerateContentConfig(temperature=0.0))
-    USAGE["calls"] += 1
-    USAGE["input_tokens"] += getattr(resp.usage_metadata, "prompt_token_count", 0) or 0
-    USAGE["output_tokens"] += getattr(resp.usage_metadata, "candidates_token_count", 0) or 0
+    
+    # Retry loop for rate limits
+    for attempt in range(3):
+        try:
+            resp = client.models.generate_content(
+                model=USAGE["model"],
+                contents=[types.Part.from_bytes(data=path.read_bytes(), mime_type='image/png'),
+                          'Extract the primary transaction amount and 3-letter currency code from this '
+                          'document. Reply JSON only: {"currency": "XXX", "amount": 0.00}'],
+                config=types.GenerateContentConfig(temperature=0.0))
+            USAGE["calls"] += 1
+            USAGE["input_tokens"] += getattr(resp.usage_metadata, "prompt_token_count", 0) or 0
+            USAGE["output_tokens"] += getattr(resp.usage_metadata, "candidates_token_count", 0) or 0
+            break
+        except Exception as e:
+            if "429" in str(e) and attempt < 2:
+                print(f"  [vision] Rate limit hit. Sleeping 15s...")
+                time.sleep(15)
+            else:
+                print(f"  [vision] skipped {image_id}: {e}")
+                return None, None
+                
     amt = cur = None
     m = re.search(r'\{.*\}', resp.text or '', re.S)
     if m:
@@ -86,6 +103,52 @@ def extract_amount_from_image(image_id):
     cache[image_id] = {"amount": amt, "currency": cur}
     CACHE_PATH.write_text(json.dumps(cache, indent=2))
     return amt, cur
+MSG_CACHE_PATH = BASE_DIR / 'code' / 'msg_cache.json'
+
+def process_messages(msg_df):
+    """Parses all messages for financial overrides using Gemini (cached & rate-limited)."""
+    cache = json.loads(MSG_CACHE_PATH.read_text()) if MSG_CACHE_PATH.exists() else {}
+    from google.genai import types
+    
+    for idx, row in tqdm(msg_df.iterrows(), total=len(msg_df), desc="Parsing messages"):
+        mid = str(row['message_id'])
+        if mid in cache:
+            continue
+            
+        # Respect 5 RPM free tier: sleep 13s every 4 calls
+        if len(cache) > 0 and len(cache) % 4 == 0:
+            print("  [msg] Sleeping 13s to respect 5 RPM free tier...")
+            time.sleep(13)
+            
+        prompt = f"""Analyze this user message about their finances. Extract any explicit overrides to their financial state.
+        - If it updates their salary/income amount: {{"type": "salary_update", "amount": 123.45, "currency": "XXX", "effective_date": "YYYY-MM-DD"}}
+        - If it delays an upcoming event: {{"type": "event_delay", "description": "rent", "new_date": "YYYY-MM-DD"}}
+        - If it cancels an event: {{"type": "event_cancel", "description": "gym membership"}}
+        - If it's just informational, pending, or unconfirmed: {{"type": "none"}}
+        Reply ONLY with valid JSON.
+        
+        Message: {row['message_text']}"""
+        
+        try:
+            resp = client.models.generate_content(
+                model=USAGE["model"], contents=[prompt],
+                config=types.GenerateContentConfig(temperature=0.0))
+            USAGE["calls"] += 1
+            USAGE["input_tokens"] += getattr(resp.usage_metadata, "prompt_token_count", 0) or 0
+            USAGE["output_tokens"] += getattr(resp.usage_metadata, "candidates_token_count", 0) or 0
+            m = re.search(r'\{.*\}', resp.text or '', re.S)
+            cache[mid] = json.loads(m.group(0)) if m else {"type": "none"}
+        except Exception as e:
+            if "429" in str(e):
+                print("  [msg] Rate limit. Sleeping 15s...")
+                time.sleep(15)
+                cache[mid] = {"type": "none"}
+            else:
+                cache[mid] = {"type": "none"}
+                
+        MSG_CACHE_PATH.write_text(json.dumps(cache, indent=2))
+        
+    return cache
 # --- HELPER: CURRENCY CONVERSION ---
 def convert_currency(amount, from_curr, to_curr, date, rates_df):
     """Converts amount to home currency using the closest past exchange rate."""
@@ -118,7 +181,7 @@ def convert_currency(amount, from_curr, to_curr, date, rates_df):
         return amount * rate
 
 # --- 3. LEDGER BUILDER LAYER (v2) ---
-def build_user_ledger(user_id, request_date, data, horizon=90):
+def build_user_ledger(user_id, request_date, data, msg_overrides, horizon=90):
     """Filters events and projects ALL recurring occurrences inside the 90-day window."""
     profile = data['profiles'][data['profiles']['user_id'] == user_id].iloc[0]
     home_curr = profile['home_currency']
@@ -138,6 +201,30 @@ def build_user_ledger(user_id, request_date, data, horizon=90):
                     ev.at[idx, 'currency'] = cur
     ev['amount_home'] = ev.apply(
         lambda r: convert_currency(r['amount'], r['currency'], home_curr, r['settlement_date'], rates), axis=1)
+     
+    # --- APPLY MESSAGE OVERRIDES ---
+    user_msgs = data['messages'][data['messages']['user_id'] == user_id]
+    for _, msg in user_msgs.iterrows():
+        override = msg_overrides.get(str(msg['message_id']))
+        if not override: continue
+        
+        if override.get('type') == 'salary_update':
+            eff_date = pd.to_datetime(override.get('effective_date'))
+            if pd.notna(eff_date):
+                amt = override.get('amount')
+                cur = override.get('currency')
+                if amt and cur:
+                    amt_home = convert_currency(amt, cur, home_curr, eff_date, rates)
+                    mask = (ev['settlement_date'] >= eff_date) & (ev['category'].str.contains('salary|income|payroll', case=False, na=False))
+                    ev.loc[mask, 'amount_home'] = amt_home
+                    
+        elif override.get('type') == 'event_delay':
+            desc = override.get('description')
+            new_date = pd.to_datetime(override.get('new_date'))
+            if desc and pd.notna(new_date):
+                mask = (ev['description'].str.contains(desc, case=False, na=False)) & (ev['settlement_date'] >= request_date)
+                if mask.any():
+                    ev.loc[mask, 'settlement_date'] = new_date
 
     # Future one-offs. Rule: reserve pending debits, ignore pending credits.
     future_events = ev[ev['settlement_date'] >= request_date].copy()
@@ -219,13 +306,14 @@ def plan_is_safe(payments, dates, balances, min_bal, request_date, horizon=90):
     return all(b >= min_bal - 1e-6 for b in bal)
 
 
-# --- 5. PLAN SELECTOR & ORCHESTRATOR (v2) ---
+# --- 5. PLAN SELECTOR & ORCHESTRATOR (v2.1) ---
 def evaluate_plans(request, profile, forecast, options):
     (dates, balances, min_bal), caps = forecast
     req_date = request['request_date']
     deadline = request['desired_completion_date']
     requested = float(request['requested_amount'])
     horizon = len(dates) - 1
+    cur = profile['home_currency']
 
     considered = set(str(profile['payment_methods_user_will_consider']).split('|'))
     max_months = profile['max_installment_months']
@@ -276,17 +364,17 @@ def evaluate_plans(request, profile, forecast, options):
         candidates.append(dict(method='wait', payments=[(efp_date, requested)], total=requested,
                                start=efp_date, option_id=None, by_deadline=efp_date <= deadline))
 
-        base = dict(amount_safe_to_pay=fmt(safe_today), spending_changes_needed='none',
+    # Base result — defined ONCE, at this indentation level, outside every if-block
+    base = dict(amount_safe_to_pay=fmt(safe_today), spending_changes_needed='none',
                 earliest_date_for_full_payment=efp_str)
 
     if not candidates:
         base.update(affordability_status='affordable_later' if efp_date else 'not_affordable',
                     recommended_payment_method='not_recommended', payment_plan='none',
-                    decision_explanation=f"Safe capacity today is {safe_today} of {requested}; "
-                                         f"full payment safe from {efp_str or 'beyond forecast'}.")
+                    decision_explanation=explain(None, cur, requested, min_bal, safe_today, [], efp_str))
         return base
 
-    # Official ranking: deadline, no changes, min total, earliest start, fewest payments, option id
+    # Official ranking: deadline, min total, earliest start, fewest payments, option id
     candidates.sort(key=lambda c: (0 if c['by_deadline'] else 1, round(c['total'], 2),
                                    c['start'], len(c['payments']), c['option_id'] or ''))
     best = candidates[0]
@@ -297,14 +385,16 @@ def evaluate_plans(request, profile, forecast, options):
         f"{d.strftime('%Y-%m-%d')}:{fmt(a)}" for d, a in best['payments'])
     base.update(affordability_status=status, recommended_payment_method=best['method'],
                 payment_plan=plan,
-                                  decision_explanation=explain(None, profile['home_currency'], requested,
-                                                 min_bal, safe_today, [], efp_str))
-
+                decision_explanation=explain(best['method'], cur, requested, min_bal,
+                                             safe_today, best['payments'], efp_str))
     return base
 
 
 # --- 6. MAIN EXECUTION LOOP ---
 def main():
+    data = load_all_data()
+    print("Processing multilingual messages...")
+    msg_overrides = process_messages(data['messages'])
     data = load_all_data()
     
     # Prepare the output DataFrame based on the required columns
@@ -316,7 +406,7 @@ def main():
     data['events'] = data['events'].drop_duplicates(
         subset=[c for c in data['events'].columns if c != 'event_id'])
     results = []
-    (BASE_DIR / 'code' / 'usage_stats.json').write_text(json.dumps(USAGE, indent=2))
+
     print(f"Evaluating {len(data['requests'])} requests...")
     
     # Loop through every request
@@ -327,7 +417,7 @@ def main():
         # 1. Get User Profile
         profile = data['profiles'][data['profiles']['user_id'] == user_id].iloc[0]
         #2
-        ledger_data = build_user_ledger(user_id, row['request_date'], data)
+        ledger_data = build_user_ledger(user_id, row['request_date'], data, msg_overrides)
         #3
         forecast = (build_daily_balance(profile, ledger_data, row['request_date']),)
         #4
@@ -346,6 +436,7 @@ def main():
     output_df = pd.DataFrame(results, columns=output_columns)
     output_path = DATASET_DIR / "output.csv"
     output_df.to_csv(output_path, index=False)
+    (BASE_DIR / 'code' / 'usage_stats.json').write_text(json.dumps(USAGE, indent=2))
     print(f"Success! Saved predictions to {output_path}")
 
 # ---------------------------JSON Section -------------------------------
