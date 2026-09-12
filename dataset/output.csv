@@ -1,251 +1,251 @@
 request_id,amount_safe_to_pay,affordability_status,recommended_payment_method,payment_plan,earliest_date_for_full_payment,spending_changes_needed,decision_explanation
-request_26,,,,,,,
-request_27,,,,,,,
-request_28,,,,,,,
-request_29,,,,,,,
-request_30,,,,,,,
-request_31,,,,,,,
-request_32,,,,,,,
-request_33,,,,,,,
-request_34,,,,,,,
-request_35,,,,,,,
-request_36,,,,,,,
-request_37,,,,,,,
-request_38,,,,,,,
-request_39,,,,,,,
-request_40,,,,,,,
-request_41,,,,,,,
-request_42,,,,,,,
-request_43,,,,,,,
-request_44,,,,,,,
-request_45,,,,,,,
-request_46,,,,,,,
-request_47,,,,,,,
-request_48,,,,,,,
-request_49,,,,,,,
-request_50,,,,,,,
-request_51,,,,,,,
-request_52,,,,,,,
-request_53,,,,,,,
-request_54,,,,,,,
-request_55,,,,,,,
-request_56,,,,,,,
-request_57,,,,,,,
-request_58,,,,,,,
-request_59,,,,,,,
-request_60,,,,,,,
-request_61,,,,,,,
-request_62,,,,,,,
-request_63,,,,,,,
-request_64,,,,,,,
-request_65,,,,,,,
-request_66,,,,,,,
-request_67,,,,,,,
-request_68,,,,,,,
-request_69,,,,,,,
-request_70,,,,,,,
-request_71,,,,,,,
-request_72,,,,,,,
-request_73,,,,,,,
-request_74,,,,,,,
-request_75,,,,,,,
-request_76,,,,,,,
-request_77,,,,,,,
-request_78,,,,,,,
-request_79,,,,,,,
-request_80,,,,,,,
-request_81,,,,,,,
-request_82,,,,,,,
-request_83,,,,,,,
-request_84,,,,,,,
-request_85,,,,,,,
-request_86,,,,,,,
-request_87,,,,,,,
-request_88,,,,,,,
-request_89,,,,,,,
-request_90,,,,,,,
-request_91,,,,,,,
-request_92,,,,,,,
-request_93,,,,,,,
-request_94,,,,,,,
-request_95,,,,,,,
-request_96,,,,,,,
-request_97,,,,,,,
-request_98,,,,,,,
-request_99,,,,,,,
-request_100,,,,,,,
-request_101,,,,,,,
-request_102,,,,,,,
-request_103,,,,,,,
-request_104,,,,,,,
-request_105,,,,,,,
-request_106,,,,,,,
-request_107,,,,,,,
-request_108,,,,,,,
-request_109,,,,,,,
-request_110,,,,,,,
-request_111,,,,,,,
-request_112,,,,,,,
-request_113,,,,,,,
-request_114,,,,,,,
-request_115,,,,,,,
-request_116,,,,,,,
-request_117,,,,,,,
-request_118,,,,,,,
-request_119,,,,,,,
-request_120,,,,,,,
-request_121,,,,,,,
-request_122,,,,,,,
-request_123,,,,,,,
-request_124,,,,,,,
-request_125,,,,,,,
-request_126,,,,,,,
-request_127,,,,,,,
-request_128,,,,,,,
-request_129,,,,,,,
-request_130,,,,,,,
-request_131,,,,,,,
-request_132,,,,,,,
-request_133,,,,,,,
-request_134,,,,,,,
-request_135,,,,,,,
-request_136,,,,,,,
-request_137,,,,,,,
-request_138,,,,,,,
-request_139,,,,,,,
-request_140,,,,,,,
-request_141,,,,,,,
-request_142,,,,,,,
-request_143,,,,,,,
-request_144,,,,,,,
-request_145,,,,,,,
-request_146,,,,,,,
-request_147,,,,,,,
-request_148,,,,,,,
-request_149,,,,,,,
-request_150,,,,,,,
-request_151,,,,,,,
-request_152,,,,,,,
-request_153,,,,,,,
-request_154,,,,,,,
-request_155,,,,,,,
-request_156,,,,,,,
-request_157,,,,,,,
-request_158,,,,,,,
-request_159,,,,,,,
-request_160,,,,,,,
-request_161,,,,,,,
-request_162,,,,,,,
-request_163,,,,,,,
-request_164,,,,,,,
-request_165,,,,,,,
-request_166,,,,,,,
-request_167,,,,,,,
-request_168,,,,,,,
-request_169,,,,,,,
-request_170,,,,,,,
-request_171,,,,,,,
-request_172,,,,,,,
-request_173,,,,,,,
-request_174,,,,,,,
-request_175,,,,,,,
-request_176,,,,,,,
-request_177,,,,,,,
-request_178,,,,,,,
-request_179,,,,,,,
-request_180,,,,,,,
-request_181,,,,,,,
-request_182,,,,,,,
-request_183,,,,,,,
-request_184,,,,,,,
-request_185,,,,,,,
-request_186,,,,,,,
-request_187,,,,,,,
-request_188,,,,,,,
-request_189,,,,,,,
-request_190,,,,,,,
-request_191,,,,,,,
-request_192,,,,,,,
-request_193,,,,,,,
-request_194,,,,,,,
-request_195,,,,,,,
-request_196,,,,,,,
-request_197,,,,,,,
-request_198,,,,,,,
-request_199,,,,,,,
-request_200,,,,,,,
-request_201,,,,,,,
-request_202,,,,,,,
-request_203,,,,,,,
-request_204,,,,,,,
-request_205,,,,,,,
-request_206,,,,,,,
-request_207,,,,,,,
-request_208,,,,,,,
-request_209,,,,,,,
-request_210,,,,,,,
-request_211,,,,,,,
-request_212,,,,,,,
-request_213,,,,,,,
-request_214,,,,,,,
-request_215,,,,,,,
-request_216,,,,,,,
-request_217,,,,,,,
-request_218,,,,,,,
-request_219,,,,,,,
-request_220,,,,,,,
-request_221,,,,,,,
-request_222,,,,,,,
-request_223,,,,,,,
-request_224,,,,,,,
-request_225,,,,,,,
-request_226,,,,,,,
-request_227,,,,,,,
-request_228,,,,,,,
-request_229,,,,,,,
-request_230,,,,,,,
-request_231,,,,,,,
-request_232,,,,,,,
-request_233,,,,,,,
-request_234,,,,,,,
-request_235,,,,,,,
-request_236,,,,,,,
-request_237,,,,,,,
-request_238,,,,,,,
-request_239,,,,,,,
-request_240,,,,,,,
-request_241,,,,,,,
-request_242,,,,,,,
-request_243,,,,,,,
-request_244,,,,,,,
-request_245,,,,,,,
-request_246,,,,,,,
-request_247,,,,,,,
-request_248,,,,,,,
-request_249,,,,,,,
-request_250,,,,,,,
-request_251,,,,,,,
-request_252,,,,,,,
-request_253,,,,,,,
-request_254,,,,,,,
-request_255,,,,,,,
-request_256,,,,,,,
-request_257,,,,,,,
-request_258,,,,,,,
-request_259,,,,,,,
-request_260,,,,,,,
-request_261,,,,,,,
-request_262,,,,,,,
-request_263,,,,,,,
-request_264,,,,,,,
-request_265,,,,,,,
-request_266,,,,,,,
-request_267,,,,,,,
-request_268,,,,,,,
-request_269,,,,,,,
-request_270,,,,,,,
-request_271,,,,,,,
-request_272,,,,,,,
-request_273,,,,,,,
-request_274,,,,,,,
-request_275,,,,,,,
+request_26,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_27,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_28,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_29,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_30,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_31,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_32,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_33,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_34,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_35,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_36,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_37,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_38,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_39,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_40,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_41,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_42,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_43,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_44,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_45,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_46,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_47,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_48,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_49,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_50,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_51,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_52,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_53,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_54,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_55,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_56,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_57,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_58,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_59,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_60,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_61,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_62,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_63,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_64,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_65,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_66,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_67,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_68,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_69,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_70,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_71,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_72,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_73,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_74,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_75,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_76,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_77,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_78,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_79,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_80,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_81,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_82,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_83,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_84,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_85,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_86,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_87,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_88,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_89,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_90,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_91,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_92,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_93,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_94,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_95,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_96,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_97,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_98,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_99,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_100,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_101,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_102,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_103,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_104,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_105,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_106,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_107,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_108,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_109,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_110,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_111,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_112,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_113,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_114,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_115,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_116,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_117,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_118,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_119,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_120,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_121,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_122,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_123,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_124,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_125,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_126,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_127,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_128,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_129,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_130,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_131,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_132,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_133,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_134,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_135,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_136,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_137,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_138,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_139,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_140,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_141,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_142,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_143,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_144,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_145,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_146,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_147,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_148,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_149,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_150,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_151,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_152,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_153,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_154,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_155,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_156,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_157,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_158,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_159,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_160,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_161,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_162,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_163,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_164,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_165,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_166,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_167,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_168,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_169,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_170,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_171,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_172,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_173,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_174,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_175,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_176,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_177,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_178,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_179,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_180,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_181,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_182,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_183,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_184,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_185,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_186,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_187,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_188,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_189,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_190,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_191,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_192,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_193,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_194,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_195,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_196,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_197,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_198,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_199,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_200,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_201,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_202,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_203,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_204,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_205,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_206,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_207,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_208,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_209,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_210,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_211,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_212,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_213,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_214,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_215,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_216,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_217,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_218,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_219,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_220,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_221,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_222,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_223,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_224,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_225,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_226,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_227,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_228,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_229,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_230,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_231,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_232,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_233,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_234,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_235,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_236,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_237,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_238,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_239,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_240,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_241,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_242,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_243,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_244,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_245,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_246,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_247,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_248,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_249,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_250,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_251,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_252,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_253,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_254,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_255,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_256,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_257,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_258,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_259,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_260,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_261,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_262,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_263,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_264,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_265,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_266,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_267,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_268,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_269,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_270,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_271,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_272,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_273,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_274,0,not_affordable,not_recommended,none,,none,Skeleton output.
+request_275,0,not_affordable,not_recommended,none,,none,Skeleton output.
