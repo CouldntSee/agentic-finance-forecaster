@@ -3,3 +3,4 @@ log.txt
 chat_transcript.txt
 __pycache__/
 *.pyc
+*.zip
