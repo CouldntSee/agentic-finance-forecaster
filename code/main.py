@@ -236,7 +236,7 @@ def build_user_ledger(user_id, request_date, data, msg_overrides, horizon=90):
     projections = []
     for desc, g in past.groupby('description'):
         if desc in future_descs:
-            continue  # already explicitly scheduled; don't double count
+            continue  
         g = g.sort_values('settlement_date')
         hist = g['settlement_date'].tolist()
         if len(hist) < 2:
@@ -306,7 +306,7 @@ def plan_is_safe(payments, dates, balances, min_bal, request_date, horizon=90):
     return all(b >= min_bal - 1e-6 for b in bal)
 
 
-# --- 5. PLAN SELECTOR & ORCHESTRATOR (v2.1) ---
+# --- 5. PLAN SELECTOR & ORCHESTRATOR  ---
 def evaluate_plans(request, profile, forecast, options):
     (dates, balances, min_bal), caps = forecast
     req_date = request['request_date']
@@ -330,7 +330,7 @@ def evaluate_plans(request, profile, forecast, options):
                                total=requested, start=req_date, option_id=None,
                                by_deadline=req_date <= deadline))
 
-    # PARTIAL PAYMENT (exactly two payments)
+    # PARTIAL PAYMENT 
     if ('partial_payment' in considered
             and str(request['allows_partial_payment']).lower() == 'true'
             and 0 < safe_today < requested
@@ -340,7 +340,7 @@ def evaluate_plans(request, profile, forecast, options):
             candidates.append(dict(method='partial_payment', payments=pays, total=requested,
                                    start=req_date, option_id=None, by_deadline=True))
 
-    # INSTALLMENTS (must match a supplied option + user preferences)
+    # INSTALLMENTS 
     if 'installments' in considered:
         for _, opt in options.iterrows():
             if opt['payment_method'] != 'installments':
@@ -359,7 +359,7 @@ def evaluate_plans(request, profile, forecast, options):
                                    total=float(opt['total_payable_amount']), start=pays[0][0],
                                    option_id=opt['payment_option_id'], by_deadline=pays[-1][0] <= deadline))
 
-    # WAIT (full payment becomes safe later)
+    
     if 'full_payment' in considered and efp_date is not None and efp_date > req_date:
         candidates.append(dict(method='wait', payments=[(efp_date, requested)], total=requested,
                                start=efp_date, option_id=None, by_deadline=efp_date <= deadline))
